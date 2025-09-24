@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+}
+#textolink {
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+}
+.contenedor-flex{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#titulo{
+    outline-style: solid;
+    outline-width: thin;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.contenedor-flex > .tipo1{
+    width: 1000px;
+    margin: 10px;
+    text-align: left;
+
+}
+.contenedor-flex > .tipo2{
+
+    width: 1000px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+}
+.contenedor-flex > .tipo3{
+    width: 900px;
+    margin: 10px;
+    height: 50px;
+    text-align: right;
+    line-height: 120px;
+
+}
+.contenedor-flex > .tipo4{
+    width: 100px;
+    line-height: 100px;
+    height: 20px;
+
+}
+.contenedor-flex > .tipo5{
+    width: 1000px;
+    margin: 10px;
+    text-align: left;
+    line-height: 70px;
+
+}
+
+.main-superior{grid-area: superior;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;}
+
+.main-inferior{grid-area: inferior;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px}
+
+.aside{
+    grid-area: aside;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            'superior aside'
+            'inferior aside';
+
+}
