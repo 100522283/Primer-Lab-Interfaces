@@ -79,3 +79,104 @@ body {
             'inferior aside';
 
 }
+.fondoA{
+    background-image: url("../images/Imagen_bosque.jpg");
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    padding: 70px;
+    justify-content: center;
+
+}
+
+.grid-container > div {
+    padding: 60px;
+}
+
+.tituloA {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: white;
+}
+.formularioA{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    background-color: white;
+}
+.formularioB{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+    background-color: white;
+}
+
+.textoCumpleA {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: left;
+    background-color: white;
+}
+.textoPolitica {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: white;
+}
+.BotonGuardar{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+    background-color: white;
+}
+.SinSaltoLinea{
+    display: inline-block;
+}
+
+.Contenedor_GridC{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    padding: 10px;
+    justify-content: center;
+}
+.Contenedor_GridC > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+.Zona1C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #981f1f;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 10px;
+
+}
+.Zona2C{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 12;
+    background-color: #1f4f98;
+}
+.Zona3C{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 12;
+    background-color: #457518;
+}
+.grid-containerC {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    justify-content: center;
+}
+.grid-containerC > div {
+    padding: 15px;
+}
