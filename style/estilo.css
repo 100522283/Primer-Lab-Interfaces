@@ -1,23 +1,12 @@
 body {
     background-color: white;
 }
-#textolink {
-    color: black;
-    text-decoration: none;
-    padding: 2px;
-}
 .contenedor-flex{
     display: flex;
     justify-content: space-between;
 
+}
 
-}
-#titulo{
-    outline-style: solid;
-    outline-width: thin;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
 .contenedor-flex > .tipo1{
     width: 1000px;
     margin: 10px;
@@ -82,95 +71,119 @@ body {
 .fondoA{
     background-image: url("../images/Imagen_bosque.jpg");
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-columns: auto auto auto auto auto;
     padding: 70px;
     justify-content: center;
 
 }
 
 .grid-container > div {
-    padding: 60px;
+    padding: 20px;
 }
 
-.tituloA {
+.TituloGrid {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
     background-color: white;
 }
-.formularioA{
+/* Aqui se encuentran las difererentes clases para el tamaño de los contenedores */
+
+.Grid1-3C{
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     background-color: white;
 }
-.formularioB{
+.Grid3-5C{
     grid-column-start: 3;
     grid-column-end: 5;
     text-align: center;
     background-color: white;
 }
+.Grid3-5R{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: Right;
+    background-color: white;
+}
 
-.textoCumpleA {
+.Grid4-5R{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: Right;
+
+}
+.Grid1-5L{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: left;
-    background-color: white;
+
 }
-.textoPolitica {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    background-color: white;
-}
-.BotonGuardar{
+.Grid1-5R{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: right;
     background-color: white;
 }
+.Grid1-3L{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
+
 .SinSaltoLinea{
     display: inline-block;
 }
 
 .Contenedor_GridC{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px 250px; /* tambien se puede poner como fracciones fr */
     padding: 10px;
     justify-content: center;
 }
-.Contenedor_GridC > div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    padding: 10px;
+.Contenedor_Grid1C {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    font-size: 20px;
 
+    justify-content: center;
 }
+
 .Zona1C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #981f1f;
+
     border: 1px solid black;
-    padding: 10px;
+    margin: 10px;
     text-align: left;
     font-size: 10px;
-
+    background-image: url("../images/ImagenC_Playa.jpg");
+    padding: 10px;
 }
+
 .Zona2C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 12;
-    background-color: #1f4f98;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
 }
 .Zona3C{
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 12;
-    background-color: #457518;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
 }
 .grid-containerC {
     display: grid;
@@ -179,4 +192,28 @@ body {
 }
 .grid-containerC > div {
     padding: 15px;
+}
+
+.contenedor-flexC {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Zona para el formato del texto */
+
+.TextoFondoBlanco{
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+}
+#titulo{
+    outline-style: solid;
+    outline-width: thin;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.textolink {
+    color: black;
+    text-decoration: none;
+    padding: 2px;
 }
