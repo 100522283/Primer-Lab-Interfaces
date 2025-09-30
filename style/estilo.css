@@ -1,12 +1,19 @@
 body {
     background-color: white;
+    width: 1200px;
+    align-content: center;
 }
 .contenedor-flex{
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 5px;
 }
-
+.titulo{
+    outline-style: solid;
+    outline-width: thin;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
 .contenedor-flex > .tipo1{
     width: 1000px;
     margin: 10px;
@@ -46,144 +53,169 @@ body {
 .main-superior{grid-area: superior;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 10px;}
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;}
 
-.main-inferior{grid-area: inferior;
+.main-inferior {
+    display: grid;
+    grid-area: inferior;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 10px}
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    grid-template-areas:
+    'tex tex tex'
+    't1 t2 t3'
+    't4 t5 t6';
+    gap: 10px;
+}
 
 .aside{
     grid-area: aside;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 10px;}
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 10px;}
 
 .contenedor-grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 66.66% 33.33%;
     grid-template-rows: auto auto;
     grid-template-areas:
             'superior aside'
             'inferior aside';
 
 }
+
+#formulario-login{
+    align-self:center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner{
+    display:flex;
+    width: 100%;
+    height: 150px;
+    background-image: url("/images/montana.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    place-items: center;
+}
+
+.banner h2{
+    display: flex;
+    color: white;
+    align-self: center;
+    width: fit-content;
+    border: #1f4f98 solid;
+    background-color: #1f4f8099;
+}
+
+.tarjeta img{
+    width: 200px;
+    height: 150px
+}
 .fondoA{
     background-image: url("../images/Imagen_bosque.jpg");
 }
-
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 120px 120px 120px 120px;
     padding: 70px;
     justify-content: center;
 
 }
 
 .grid-container > div {
-    padding: 20px;
+    padding: 60px;
 }
 
-.TituloGrid {
+.tituloA {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
     background-color: white;
 }
-/* Aqui se encuentran las difererentes clases para el tamaño de los contenedores */
-
-.Grid1-3C{
+.formularioA{
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     background-color: white;
 }
-.Grid3-5C{
+.formularioB{
     grid-column-start: 3;
     grid-column-end: 5;
     text-align: center;
     background-color: white;
 }
-.Grid3-5R{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    text-align: Right;
-    background-color: white;
-}
 
-.Grid4-5R{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    text-align: Right;
-
-}
-.Grid1-5L{
+.textoCumpleA {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: left;
-
+    background-color: white;
 }
-.Grid1-5R{
+.textoPolitica {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: white;
+}
+.BotonGuardar{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: right;
     background-color: white;
 }
-.Grid1-3L{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: left;
-}
-
 .SinSaltoLinea{
     display: inline-block;
 }
 
 .Contenedor_GridC{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px; /* tambien se puede poner como fracciones fr */
+    grid-template-columns: 250px 250px 250px 250px 250px;
     padding: 10px;
     justify-content: center;
 }
-.Contenedor_Grid1C {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    font-size: 20px;
+.Contenedor_GridC > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
 
-    justify-content: center;
 }
-
 .Zona1C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-
+    background-color: #981f1f;
     border: 1px solid black;
-    margin: 10px;
+    padding: 10px;
     text-align: left;
     font-size: 10px;
-    background-image: url("../images/ImagenC_Playa.jpg");
-    padding: 10px;
-}
 
+}
 .Zona2C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 12;
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+    background-color: #1f4f98;
 }
 .Zona3C{
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 12;
-    margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
+    background-color: #457518;
 }
 .grid-containerC {
     display: grid;
@@ -194,26 +226,120 @@ body {
     padding: 15px;
 }
 
-.contenedor-flexC {
-    display: flex;
-    justify-content: space-between;
+.boton{
+    background-color: antiquewhite;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 7px;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
 }
 
-/* Zona para el formato del texto */
-
-.TextoFondoBlanco{
-    background-color: white;
-    outline-style: solid;
-    outline-width: thin;
-}
-#titulo{
-    outline-style: solid;
-    outline-width: thin;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-.textolink {
-    color: black;
+a{
     text-decoration: none;
+    color: black;
     padding: 2px;
+}
+
+.tarjeta{
+    display:grid;
+    max-width: 266px;
+    grid-template-areas:
+            'titulo_tarjeta titulo_tarjeta'
+            'foto_tarjeta like'
+            'foto_tarjeta ver_mas';
+    grid-template-columns: auto auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.foto_tarjeta{
+    display:grid;
+    grid-area: foto_tarjeta;
+    place-items: center;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.foto_tarjeta img{
+    height: 100px;
+    width: 165px;
+    border-radius: 3px;
+}
+
+
+.like{
+    display: grid;
+    grid-area: like;
+    place-items: center;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.like img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.ver_mas{
+    display:grid;
+    grid-area: ver_mas;
+    padding: 5px;
+    place-items: center;
+}
+
+.titulo_tarjeta{
+    display: grid;
+    grid-area: titulo_tarjeta;
+    height: min-content;
+    align-content: center;
+}
+
+.titulo_tarjeta h4{
+    margin: 0;
+    padding: 5px;
+}
+
+#tarjeta1{
+    display:grid;
+    grid-area: t1;
+}
+
+#tarjeta2{
+    display:grid;
+    grid-area: t2;
+}
+
+#tarjeta3{
+    display:grid;
+    grid-area: t3;
+}
+
+#tarjeta4{
+    display:grid;
+    grid-area: t4;
+}
+
+#tarjeta5{
+    display:grid;
+    grid-area: t5;
+}
+
+#tarjeta6{
+    display:grid;
+    grid-area: t6;
+}
+
+
+#titulo_experiencias{
+    display: grid;
+    grid-area:tex;
+}
+
+.titulo_seccion h3{
+    margin: 0;
 }
