@@ -1,31 +1,34 @@
 <!doctype html>
 <meta charset="UTF-8">
-<html>
+<html lang="es">
 <head>
     <link rel="stylesheet" href="style/estilo.css">
-    <title> Mochileros Sin Fronterass</title>
+    <title> Mochileros Sin Fronteras</title>
 
 </head>
 <body>
-<header id="titulo">
+<header class="titulo">
     <div class="contenedor-flex">
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
         <div class="tipo2"> <!-- hacer lista -->
-            <a href="Ponerenlace.html" id="textolink"> Inicio </a>
-            <a href="Ponerenlace.html" id="textolink"> Experiencias </a>
-            <a href="Ponerenlace.html" id="textolink"> Consejos </a>
-            <a href="Ponerenlace.html" id="textolink"> Foro </a>
-            <a href="Ponerenlace.html" id="textolink"> Contacto</a>
-            <a href="Ponerenlace.html" id="textolink"> ... </a>
+            <a href="*"> Inicio </a>
+            <a href="*"> Experiencias </a>
+            <a href="*"> Consejos </a>
+            <a href="*"> Foro </a>
+            <a href="*"> Contacto</a>
         </div>
         <div class="tipo3">
             <ul style="list-style-type:none;">
                 <li style="float: right; line-height: 100px">
                     <form>
-                        <input type="button"> ES </input>
+                        <select name="idioma" id="idioma">
+                            <option value="ES">ES</option>
+                        </select>
                     </form>
                 </li>
-                <li style="float: right;"><img src="images/1140x641.jpg" width = "50" height = "50" alt="Logo"></li>
+                <li style="float: right;"><img src="images/mochila.png"
+                                               width = "50" height = "50"
+                                               alt="Mochila"></li>
 
             </ul>
         </div>
@@ -37,8 +40,12 @@
     <div class="contenedor-grid">
         <div>
             <div class="main-superior">
-                <article> banner </article>
-                <section> carrusel
+                <div class="banner">
+                    <div id="texto_banner">
+                        <h2>Proposición de valor</h2>
+                    </div>
+                </div>
+                <div> carrusel
                     <article>
                         <h4>tarjeta 1</h4>
                         <img la foto>
@@ -46,104 +53,184 @@
                         15€
                         <a href="web de comprar">Comprar</a>
                     </article>
-                </section>
+                </div>
             </div>
 
             <div class="main-inferior">
-                <article class="tarjeta">
-                    <h4>tarjeta 1</h4>
-                    <img la foto>
-                    <a href="web de registro">
-                        <img icono de like>
-                    </a>
-                    <a href="web de registro">Ver más </a>
-                </article>
-                <article class="tarjeta">
-                    <h4>tarjeta 2</h4>
-                    <img la foto>
-                    <a href="web de registro">
-                        <img icono de like>
-                    </a>
-                    <a href="web de registro">Ver más </a>
-                </article>
-                <article class="tarjeta">
-                    <h4>tarjeta 3</h4>
-                    <img la foto>
-                    <a href="web de registro">
-                        <img icono de like>
-                    </a>
-                    <a href="web de registro">Ver más </a>
-                </article>
-                <article class="tarjeta">
-                    <h4>tarjeta 4</h4>
-                    <img la foto>
-                    <a href="web de registro">
-                        <img icono de like>
-                    </a>
-                    <a href="web de registro">Ver más </a>
-                </article>
+
+                <div class="titulo_seccion" id="titulo_experiencias">
+                    <h3>¡Elige tu experiencia!</h3>
+                </div>
+
+                <div class="tarjeta" id="tarjeta1">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta" id="tarjeta2">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta"  id="tarjeta3">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta" id="tarjeta4">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta" id="tarjeta5">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta" id="tarjeta6">
+                    <div class="titulo_tarjeta">
+                        <h4>tarjeta 1</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/pekin.jpg" alt="Pekin">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="Parte%20A.html" class="boton">Ver más </a>
+                    </div>
+                </div>
             </div>
         </div>
+
         <aside class="aside">
+
             <form id="formulario-login">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario">
-                <label for="contrasena">Contraseña:</label>
-                <input type="text" id="contrasena">
+                <input type="text" id="usuario" placeholder="Usuario">
+                <br>
+                <input type="password" id="contrasena"
+                       placeholder="Contraseña">
+                <br>
                 <label for="recordar">Recordar contraseña</label>
                 <input type="checkbox" id="recordar">
-                <a href="login" class="boton">Iniciar sesión</a>
+                <br>
+                <a href="" class="boton">Iniciar sesión</a>
+                <a href="Parte%20A.html" class="boton">Registro</a>
             </form>
-            <div>
-                <a href="registro" class="boton">Registro</a>
-            </div>
+
             <section>
                 <h3>Destinos de moda</h3>
                 <ul>
                     <li><a href="*">Nueva York</a></li>
-                    <li><a href="*">Pyongyang</a></li>
-                    <li><a href="*">Moscú</a></li>
+                    <li><a href="*">Barcelona</a></li>
+                    <li><a href="*">Tokyo</a></li>
                 </ul>
             </section>
+
             <section>
                 <h3>Los mejores tips</h3>
                 <ul>
                     <li><a href="*">Bebe agua embotellada</a></li>
-                    <li><a href="*">Si te piden un cigarro huye</a></li>
-                    <li><a href="*">Mételo todo al rojo</a></li>
+                    <li><a href="*">No cambies dinero en el aeropuerto</a></li>
+                    <li><a href="*">Descarga los mapas con antelación</a></li>
                 </ul>
             </section>
+
             <section>
                 <h3>Nos vemos próximamente los días</h3>
                 <ul>
-                    <li><a href="*">01/02 en Aquí</a></li>
-                    <li><a href="*">03/04 en Allá</a></li>
-                    <li><a href="*">05/06 en Más allá</a></li>
+                    <li><a href="*">01/02 en Madrid</a></li>
+                    <li><a href="*">03/04 en Valencia</a></li>
+                    <li><a href="*">05/06 en Sevilla</a></li>
                 </ul>
             </section>
         </aside>
     </div>
 </main>
-<footer id="titulo">
+
+<footer class="titulo">
     <div class="contenedor-flex">
         <div class="tipo5">
-            <p1>@ 2026 Mochileros sin fronteras.</p1>
+            <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="Ponerenlace.html" id="textolink"> Sobre nosotros. </a>
-            <a href="Ponerenlace.html" id="textolink"> Politica de privacidad. </a>
-            <a href="Ponerenlace.html" id="textolink"> Ayuda. </a>
+            <a href="*"> Sobre nosotros. </a>
+            <a href="*"> Politica de privacidad. </a>
+            <a href="*"> Ayuda. </a>
         </div>
         <div class="tipo2">
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="text"> </input>
+                <input type="text" id="fname" placeholder="Correo electrónico">
             </form>
         </div>
         <div class="tipo3">
-            <img src="images/icono_instagram.jpg" width = "50" height = "50" alt="Logo">
-            <img src="images/facebook_logo.jpg" width = "50" height = "50" alt="Logo">
-            <img src="images/tiktok_logo.jpg" width = "50" height = "50" alt="Logo">
+            <img src="images/twitter.jpg" width = "50" height = "50" alt="Logo">
+            <img src="images/instagram.png" width = "50" height = "50" alt="Logo">
+            <img src="images/tiktok.png" width = "50" height = "50" alt="Logo">
         </div>
     </div>
 </footer>
