@@ -2,15 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/estilo.css">
     <title> Mochileros Sin Fronteras</title>
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <header class="titulo">
     <div class="contenedor-flex">
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
-        <div class="tipo2"> <!-- hacer lista -->
+        <div class="tipo2">
             <a href="*"> Inicio </a>
             <a href="*"> Experiencias </a>
             <a href="*"> Consejos </a>
@@ -18,26 +21,19 @@
             <a href="*"> Contacto</a>
         </div>
         <div class="tipo3">
-            <ul style="list-style-type:none;">
-                <li style="float: right; line-height: 100px">
-                    <form>
-                        <select name="idioma" id="idioma">
-                            <option value="ES">ES</option>
-                        </select>
-                    </form>
-                </li>
-                <li style="float: right;"><img src="images/mochila.png"
-                                               width = "50" height = "50"
-                                               alt="Mochila"></li>
-
-            </ul>
+            <form>
+                <select name="idioma" id="idioma">
+                    <option value="ES">ES</option>
+                </select>
+            </form>
+            <img src="images/mochila.png" alt="Mochila">
         </div>
 
     </div>
 
 </header>
 <main class="fondoA">
-    <div class="grid-container">
+    <div class="grid-containerA">
         <div class="TituloGrid">
             <h2>Registro de nuevos usuario</h2>
         </div>
@@ -64,7 +60,7 @@
 
         <div class="Grid1-5L">
             <form>
-                <p1>Fecha de nacimiento:<br></p1>
+                <p>Fecha de nacimiento:<br></p>
                 <input type="datetime-local" id="birthdaytime" name="birthdaytime">
             </form>
         </div>
@@ -79,11 +75,11 @@
             </form>
         </div>
         <div class="Grid1-5L">
-            <p1>Subir imagen de perfil</p1>
+            <p>Subir imagen de perfil</p>
         </div>
         <div class="Grid1-5L">
             <form>
-                <input type="file" placeholder="Examinar...">
+                <input type="file">
             </form>
         </div>
         <div class="Grid1-5L">
@@ -108,17 +104,16 @@
             <a href="*"> Sobre nosotros. </a>
             <a href="*"> Politica de privacidad. </a>
             <a href="*"> Ayuda. </a>
-        </div>
-        <div class="tipo2">
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="text" id="fname" placeholder="Correo electrónico">
+                <input type="email" id="fname"
+                       placeholder="Correo electrónico">
             </form>
         </div>
         <div class="tipo3">
-            <img src="images/twitter.jpg" width = "50" height = "50" alt="Logo">
-            <img src="images/instagram.png" width = "50" height = "50" alt="Logo">
-            <img src="images/tiktok.png" width = "50" height = "50" alt="Logo">
+            <img src="images/twitter.jpg" alt="Logo" class="logo">
+            <img src="images/instagram.png" alt="Logo" class="logo">
+            <img src="images/tiktok.png" alt="Logo" class="logo">
         </div>
     </div>
 </footer>

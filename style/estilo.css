@@ -82,26 +82,13 @@ footer{
     background-image: url("../images/montana.jpg");
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 70px;
-    justify-content: center;
-
-}
-
-.grid-container > div {
-    padding: 20px;
-    background-color: white;
-    opacity: 0.8;
-}
+/* Aqui se encuentran las difererentes clases para el tamaño de los contenedores de formato 5 columnas*/
 
 .TituloGrid {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
 }
-/* Aqui se encuentran las difererentes clases para el tamaño de los contenedores */
 
 .Grid1-3C{
     grid-column-start: 1;
@@ -149,22 +136,43 @@ footer{
 .SinSaltoLinea{
     display: inline-block;
 }
+.grid-containerA { /* Contenedor grid para el formulario de la Zona A */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 70px;
+    justify-content: center;
 
-.Contenedor_GridC{
+}
+
+.grid-containerA > div {
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.Contenedor_GridC{ /* Contenedor Grid del Apartado C, este sera dividido en 3 partes */
     display: grid;
     grid-template-columns: 250px 250px 250px 250px 250px; /* tambien se puede poner como fracciones fr */
     padding: 10px;
     justify-content: center;
 }
-.Contenedor_Grid1C {
+.Contenedor_Grid1C { /*Contenedor Grdi de la primera zona del apartado C */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     font-size: 20px;
 
     justify-content: center;
 }
+.grid-container3C { /* Contenedor grid de la tercera zona del apartado C */
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    justify-content: center;
+}
+.grid-container3C > div {
+    padding: 15px;
+}
 
-.Zona1C{
+.Zona1C{ /* La primera zona va de la columna 1 al 3 y fila del 1 al 3 */
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -178,7 +186,7 @@ footer{
     padding: 10px;
 }
 
-.Zona2C{
+.Zona2C{ /* La segunda zona va de la columna 1 al 3 y fila 3 al 12*/
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -187,7 +195,7 @@ footer{
     margin: 10px;
     padding: 10px;
 }
-.Zona3C{
+.Zona3C{ /* la tercera zona va de la columna 3 al 6 y fila 1 al 12*/
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -197,14 +205,7 @@ footer{
     padding: 10px;
 }
 
-.grid-containerC {
-    display: grid;
-    grid-template-columns: 120px 120px 120px 120px;
-    justify-content: center;
-}
-.grid-containerC > div {
-    padding: 15px;
-}
+
 .TextoFondoBlanco{
     background-color: white;
     outline-style: solid;
@@ -212,10 +213,7 @@ footer{
     opacity: 0.7;
 }
 
-.contenedor-flexC {
-    display: flex;
-    justify-content: space-between;
-}
+
 .boton{
     background-color: lightblue;
     border-style: solid;
