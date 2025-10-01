@@ -1,10 +1,26 @@
 body {
     background-color: white;
-    width: 1200px;
     align-content: center;
+    font-family: "Montserrat", sans-serif;
 }
+
+h2{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
 .contenedor-flex{
     display: flex;
+    width: auto;
+    flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;
 }
@@ -15,26 +31,31 @@ body {
     border-radius: 10px;
 }
 .contenedor-flex > .tipo1{
-    width: 1000px;
-    margin: 10px;
-    text-align: left;
-
+    width: fit-content;
+    font-size: 90%;
 }
 .contenedor-flex > .tipo2{
-
-    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display:flex;
+    flex-direction: row;
+    width: auto;
     margin: 10px;
-    text-align: center;
-    line-height: 75px;
     font-size: 20px;
+    flex-wrap: wrap;
 }
 .contenedor-flex > .tipo3{
-    width: 900px;
-    margin: 10px;
-    height: 50px;
-    text-align: right;
-    line-height: 120px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 5px;
+    align-items: center;
+}
 
+.contenedor-flex >.tipo3 img{
+    width: 50px;
+    height: 50px;
 }
 .contenedor-flex > .tipo4{
     width: 100px;
@@ -43,180 +64,139 @@ body {
 
 }
 .contenedor-flex > .tipo5{
-    width: 1000px;
+    width: fit-content;
     margin: 10px;
     text-align: left;
-    line-height: 70px;
 
 }
 
-.main-superior{grid-area: superior;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+header{
     padding: 10px;
-    display: flex;
-    flex-direction: column;}
+}
 
-.main-inferior {
-    display: grid;
-    grid-area: inferior;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+footer{
     padding: 10px;
-    grid-template-areas:
-    'tex tex tex'
-    't1 t2 t3'
-    't4 t5 t6';
-    gap: 10px;
 }
 
-.aside{
-    grid-area: aside;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    padding: 10px;}
-
-.contenedor-grid{
-    display: grid;
-    grid-template-columns: 66.66% 33.33%;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-            'superior aside'
-            'inferior aside';
-
-}
-
-#formulario-login{
-    align-self:center;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.banner{
-    display:flex;
-    width: 100%;
-    height: 150px;
-    background-image: url("/images/montana.jpg");
-    background-size: cover;
-    background-position: center 20%;
-    place-items: center;
-}
-
-.banner h2{
-    display: flex;
-    color: white;
-    align-self: center;
-    width: fit-content;
-    border: #1f4f98 solid;
-    background-color: #1f4f8099;
-}
-
-.tarjeta img{
-    width: 200px;
-    height: 150px
-}
 .fondoA{
-    background-image: url("../images/Imagen_bosque.jpg");
+    background-image: url("../images/montana.jpg");
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-columns: auto auto auto auto auto;
     padding: 70px;
     justify-content: center;
 
 }
 
 .grid-container > div {
-    padding: 60px;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
 }
 
-.tituloA {
+.TituloGrid {
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: center;
-    background-color: white;
 }
-.formularioA{
+/* Aqui se encuentran las difererentes clases para el tamaño de los contenedores */
+
+.Grid1-3C{
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    background-color: white;
+
 }
-.formularioB{
+.Grid3-5C{
     grid-column-start: 3;
     grid-column-end: 5;
     text-align: center;
-    background-color: white;
+
+}
+.Grid3-5R{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: Right;
+
 }
 
-.textoCumpleA {
+.Grid4-5R{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: Right;
+
+}
+.Grid1-5L{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: left;
-    background-color: white;
+
 }
-.textoPolitica {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    background-color: white;
-}
-.BotonGuardar{
+.Grid1-5R{
     grid-column-start: 1;
     grid-column-end: 5;
     text-align: right;
-    background-color: white;
+
 }
+.Grid1-3L{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+}
+
 .SinSaltoLinea{
     display: inline-block;
 }
 
 .Contenedor_GridC{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px 250px 250px; /* tambien se puede poner como fracciones fr */
     padding: 10px;
     justify-content: center;
 }
-.Contenedor_GridC > div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    padding: 10px;
+.Contenedor_Grid1C {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    font-size: 20px;
 
+    justify-content: center;
 }
+
 .Zona1C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #981f1f;
+
     border: 1px solid black;
-    padding: 10px;
+    margin: 10px;
     text-align: left;
     font-size: 10px;
-
+    background-image: url("../images/ImagenC_Playa.jpg");
+    padding: 10px;
 }
+
 .Zona2C{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 12;
-    background-color: #1f4f98;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
 }
 .Zona3C{
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 12;
-    background-color: #457518;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
 }
+
 .grid-containerC {
     display: grid;
     grid-template-columns: 120px 120px 120px 120px;
@@ -225,9 +205,19 @@ body {
 .grid-containerC > div {
     padding: 15px;
 }
+.TextoFondoBlanco{
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+    opacity: 0.7;
+}
 
+.contenedor-flexC {
+    display: flex;
+    justify-content: space-between;
+}
 .boton{
-    background-color: antiquewhite;
+    background-color: lightblue;
     border-style: solid;
     border-width: thin;
     border-color: black;
@@ -244,9 +234,192 @@ a{
     padding: 2px;
 }
 
+.main-superior{grid-area: superior;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;}
+
+.main-inferior {
+    justify-content: space-evenly;
+    display: grid;
+    grid-area: inferior;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    grid-template-areas:
+    'tex tex tex'
+    't1 t2 t3'
+    't4 t5 t6';
+    gap: 10px;
+}
+
+.aside{
+    display: flex;
+    grid-area: aside;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            'superior aside'
+            'inferior aside';
+
+}
+
+#formulario-login{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    'usuario usuario'
+    'contrasena contrasena'
+    'recordar recordar'
+    'login registro';
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#usuario{
+    grid-area: usuario;
+    width: 200px;
+    height: 20px;
+}
+
+
+#contrasena{
+    grid-area: contrasena;
+    width: 200px;
+    height: 20px;
+}
+
+
+#recordar{
+    grid-area: recordar;
+    text-align: justify;
+}
+
+#login{
+    grid-area: login;
+    justify-self: right;
+}
+
+#registro{
+    grid-area: registro;
+    justify-self: left;
+}
+
+.banner{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-image: url("/images/montana.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#texto_banner{
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: beige;
+    align-self: center;
+    border-radius: 10px;
+}
+
+#carrusel{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pack_carrusel{
+    display: grid;
+    width: 670px;
+    height: 300px;
+    background-image: url("/images/ImagenC_Playa.jpg");
+    background-size: cover;
+    grid-template-areas:
+    'titulo_pack precio_pack'
+    'texto_pack precio_pack'
+    'comprar_pack comprar_pack';
+    grid-template-rows: auto 200px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#flecha_izq{
+    font-size: 24px;
+}
+
+#flecha_der{
+    font-size: 24px;
+}
+.titulo_pack{
+    grid-area: titulo_pack;
+    justify-self: left;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.precio_pack{
+    grid-area: precio_pack;
+    justify-self: right;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 100%;
+}
+
+.texto_pack{
+    grid-area: texto_pack;
+    justify-self: left;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+
+.comprar_pack{
+    grid-area: comprar_pack;
+    justify-self: right;
+    align-self: end;
+    font-size: 24px;
+}
+
 .tarjeta{
     display:grid;
-    max-width: 266px;
+    max-width: 230px;
     grid-template-areas:
             'titulo_tarjeta titulo_tarjeta'
             'foto_tarjeta like'
@@ -254,6 +427,7 @@ a{
     grid-template-columns: auto auto;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
 }
 
 .foto_tarjeta{
@@ -266,7 +440,7 @@ a{
 
 .foto_tarjeta img{
     height: 100px;
-    width: 165px;
+    width: 140px;
     border-radius: 3px;
 }
 
@@ -280,8 +454,8 @@ a{
 }
 
 .like img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -290,13 +464,14 @@ a{
     grid-area: ver_mas;
     padding: 5px;
     place-items: center;
+    font-size: 14px;
 }
 
 .titulo_tarjeta{
-    display: grid;
     grid-area: titulo_tarjeta;
     height: min-content;
     align-content: center;
+    text-align: center;
 }
 
 .titulo_tarjeta h4{
@@ -334,12 +509,205 @@ a{
     grid-area: t6;
 }
 
-
 #titulo_experiencias{
-    display: grid;
     grid-area:tex;
 }
 
-.titulo_seccion h3{
-    margin: 0;
+.textolink {
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+}
+
+#datos_perfil{
+    display: grid;
+    grid-template-areas:
+        'foto_perfil nombre_perfil'
+        'foto_perfil logout';
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+#nombre_perfil{
+    grid-area: nombre_perfil;
+}
+
+#foto_perfil{
+    width: 70px;
+    height: 70px;
+    grid-area: foto_perfil;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#logout{
+    grid-area: logout;
+}
+
+#tipos_experiencias{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+            'checks_experiencias checks_experiencias'
+            'adrenalina relax'
+            'amigos individual'
+            'busqueda busqueda';
+    justify-content: center;
+}
+
+#checks_experiencias{
+    grid-area: checks_experiencias;
+}
+
+#adrenalina{
+    grid-area: adrenalina;
+}
+
+#relax{
+    grid-area: relax;
+}
+
+#amigos{
+    grid-area: amigos;
+}
+
+#individual{
+    grid-area: individual;
+}
+
+
+#busqueda{
+    grid-area: busqueda;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#lupa{
+    width: 20px;
+    height: 20px;
+}
+
+#tips_usuarios{
+    display: flex;
+    flex-direction: column;
+}
+
+#form_tips{
+    display: grid;
+    grid-template-areas:
+            'titulo_tip titulo_tip'
+            'nombre_tip enviar_tip'
+            'texto_tip enviar_tip';
+    align-items: center;
+    gap: 10px;
+}
+
+#titulo_tip{
+    grid-area: titulo_tip;
+}
+
+#nombre_tip{
+    grid-area: nombre_tip;
+}
+
+#texto_tip{
+    grid-area: texto_tip;
+}
+
+#enviar_tip{
+    grid-area: enviar_tip;
+}
+
+
+#calendario{
+    display: grid;
+    grid-template-areas: 'foto_calendario';
+    align-items: center;
+    justify-content: center;
+}
+#foto_calendario{
+    grid-area: foto_calendario;
+    width: 230px;
+}
+
+@media only screen and (max-width: 700px){
+    .Contenedor_GridC{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .Zona1C{grid-column-start:1;
+        grid-column-end: 6;}
+    .Zona2C{grid-column-start:1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 12;}
+    .Zona3C{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 12;
+
+    }
+    .contenedor-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-flex > .tipo1{width: auto;
+    text-align: center;
+    margin: 0;}
+    .contenedor-flex > .tipo3{width: auto;
+        margin: 0;
+        height: fit-content;
+        text-align: center;
+        line-height: 0;}
+    .contenedor-flex > .tipo5{
+        width: auto;
+        margin: 0;
+        text-align: Center;
+        line-height: 0;
+
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .main-inferior{
+        grid-template-areas:
+        'tex tex'
+        't1 t2'
+        't3 t4'
+        't5 t6';}
+}
+
+@media only screen and (max-width: 767px){
+    .main-inferior{
+        grid-template-areas:
+        'tex tex'
+        't1 t2'
+        't3 t4'
+        't5 t6';
+    }
+
+    .contenedor-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-inferior {
+        grid-template-areas:
+        'tex'
+        't1'
+        't2'
+        't3'
+        't4'
+        't5'
+        't6';
+    }
 }

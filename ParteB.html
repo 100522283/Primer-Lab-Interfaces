@@ -50,7 +50,7 @@
                             <h3>Pack Caribe:</h3>
                         </div>
                         <div class="texto_pack">Una experiencia que abordara
-                         todo tipo de naturaleza Caribeña desde junglas
+                            todo tipo de naturaleza Caribeña desde junglas
                             a mar, todo incluido
                         </div>
                         <div class="comprar_pack">
@@ -173,51 +173,71 @@
         </div>
 
         <aside class="aside">
-            <div>
-                <form id="formulario-login">
-                    <input type="text" id="usuario" placeholder="Usuario">
-                    <input type="password" id="contrasena"
-                           placeholder="Contraseña">
-                    <label id="recordar">
-                        <input type="checkbox"> Recordar contraseña
-                    </label>
-                    <a href="" class="boton" id="login">Iniciar sesión</a>
-                    <a href="Parte%20A.html" class="boton" id="registro">Registro
-                    </a>
-                </form>
+            <div id="datos_perfil">
+                <h3 id="nombre_perfil">Botas M.</h3>
+                <img src="/images/botas.png" alt="Foto de perfil"
+                     id="foto_perfil">
+                <a href="*" id="logout" class="boton">Cerrar sesión</a>
             </div>
 
-            <section id="destinos">
-                <h3>Los destinos que están de moda</h3>
-                <ul>
-                    <li><a href="*">Nueva York</a></li>
-                    <li><a href="*">Camboya</a></li>
-                    <li><a href="*">Abu Dhabi</a></li>
-                </ul>
+            <section>
+                <form id="tipos_experiencias">
+                    <h3 id="checks_experiencias">¿Qué experiencia estás
+                        buscando?</h3>
+                    <label id="adrenalina">
+                        <input type="checkbox"> Adrenalina máxima
+                    </label>
+
+                    <label id="relax">
+                        <input type="checkbox"> Relax
+                    </label>
+
+                    <label id="amigos">
+                        <input type="checkbox"> Con amigos
+                    </label>
+
+                    <label id="individual">
+                        <input type="checkbox"> Individual
+                    </label>
+
+                    <div id="busqueda">
+                        <input type="text" id="buscar_experiencia"
+                               placeholder="Introduce tu búsqueda">
+
+                        <a href="*" class="boton">
+                            <img src="/images/lupa.png" alt="Icono lupa"
+                                 id="lupa">
+                        </a>
+
+
+                    </div>
+                </form>
             </section>
 
-            <section id="tips">
-                <div class="titulo_seccion">
-                    <h3>Los mejores tips</h3>
-                </div>
+            <section id="tips_usuarios">
+                <h3>Últimos tips de otros usuarios</h3>
                 <ul>
-                    <li><a href="*">Bebe agua embotellada</a></li>
-                    <li><a href="*">No cambies dinero en el aeropuerto</a></li>
-                    <li><a href="*">Descarga los mapas con antelación</a></li>
+                    <li><a href="*">Cómo ganar dinero bailando
+                        sevillanas</a></li>
+                    <li><a href="*">Mis mejores remedios para las
+                        ampollas</a></li>
+                    <li><a href="*">Presentamos la app definitiva para
+                        viajeros</a></li>
                 </ul>
+                <form id="form_tips">
+                    <h3 id="titulo_tip">¿Tienes algún tip?</h3>
+                    <input type="text" id="nombre_tip"
+                           placeholder="Título del tip">
+                    <input type="text" id="texto_tip"
+                           placeholder="Escribe aquí tu tip">
+                    <a href="*" class="boton" id="enviar_tip">Enviar</a>
+                </form>
             </section>
 
-            <section id="proximamente">
-                <div class="titulo_seccion">
-                    <h3>Nos vemos próximamente los días</h3>
-                </div>
-                <ul>
-                    <li><a href="*">01/02 en Madrid</a></li>
-                    <li><a href="*">03/04 en Valencia</a></li>
-                    <li><a href="*">05/06 en Sevilla</a></li>
-                </ul>
-
-            </section>
+            <div id="calendario">
+                <img src="/images/calendario.png" alt="Calendario"
+                          id="foto_calendario">
+            </div>
         </aside>
     </div>
 </main>
@@ -233,8 +253,7 @@
             <a href="*"> Ayuda. </a>
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="email" id="fname"
-                       placeholder="Correo electrónico">
+                <input type="text" id="fname" placeholder="Correo electrónico">
             </form>
         </div>
         <div class="tipo3">

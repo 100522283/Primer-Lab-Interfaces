@@ -1,31 +1,34 @@
 <!doctype html>
-<meta charset="UTF-8" xmlns="http://www.w3.org/1999/html">
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style/estilo.css">
-    <title> Mochileros Sin Fronterass</title>
+    <title> Mochileros Sin Fronteras</title>
 
 </head>
 <body>
-<header id="titulo">
+<header class="titulo">
     <div class="contenedor-flex">
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
         <div class="tipo2"> <!-- hacer lista -->
-            <a href="Ponerenlace.html" id="textolink"> Inicio </a>
-            <a href="Ponerenlace.html" id="textolink"> Experiencias </a>
-            <a href="Ponerenlace.html" id="textolink"> Consejos </a>
-            <a href="Ponerenlace.html" id="textolink"> Foro </a>
-            <a href="Ponerenlace.html" id="textolink"> Contacto</a>
-            <a href="Ponerenlace.html" id="textolink"> ... </a>
+            <a href="*"> Inicio </a>
+            <a href="*"> Experiencias </a>
+            <a href="*"> Consejos </a>
+            <a href="*"> Foro </a>
+            <a href="*"> Contacto</a>
         </div>
         <div class="tipo3">
             <ul style="list-style-type:none;">
                 <li style="float: right; line-height: 100px">
                     <form>
-                        <input type="button"> ES </input>
+                        <select name="idioma" id="idioma">
+                            <option value="ES">ES</option>
+                        </select>
                     </form>
                 </li>
-                <li style="float: right;"><img src="images/1140x641.jpg" width = "50" height = "50" alt="Logo"></li>
+                <li style="float: right;"><img src="images/mochila.png"
+                                               width = "50" height = "50"
+                                               alt="Mochila"></li>
 
             </ul>
         </div>
@@ -36,14 +39,19 @@
 <main>
     <div class="Contenedor_GridC">
         <div class="Zona1C">
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 3</p>
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 1</p>
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 1</p>
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 1</p>
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 1</p>
-            <p>Aqui va a ir todo lo que tenga que ver con la zona 1</p>
+            <div class="Contenedor_Grid1C">
+                <div class="Grid1-3L">
+                    <p class="TextoFondoBlanco"> Pack Caribe: </p>
+                </div>
+                <div class="Grid4-5R">
+                    <p class="TextoFondoBlanco"> 1000$</p>
+                </div>
+                <div class="Grid1-5L">
+                    <p class="TextoFondoBlanco">Una experiencia que abordara todos tipo de naturaleza Caribeña desde junglas a mar, todo incluido</p>
+                </div>
+            </div>
         </div>
-        <div class="Zona2C">
+        <div class="Zona2C" >
             <h4>Descripcion del pack:</h4>
             <p>Embárcate en una experiencia única con nuestro Pack Aventurero “Descubre Paraísos”.
                 Diseñado para quienes buscan combinar naturaleza, cultura y diversión,
@@ -58,88 +66,86 @@
         </div>
         <div class="Zona3C">
             <div class="grid-containerC">
-                <div class="tituloA">
+                <div class="TituloGrid">
                     <h2>Formulario de compra</h2>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <form>
                         <input type="text" placeholder="Nombre Completo">
                     </form>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <form>
                         <input type="text" placeholder=" Correro Electronico ">
                     </form>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <p>Tipo de Tarjeta:</p>
                 </div>
-                <div class="textoCumpleA">
-                    <select name="fruits">
+                <div class="Grid1-5L">
+                    <select>
                         <option>Visa</option>
                         <option>Mastercard</option>
                         <option>GooglePay</option>
                     </select>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <form>
                         <input type="number" placeholder="Numero de tarjeta">
                     </form>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <form>
                         <input type="text" placeholder="Nombre Titular de Tarjeta">
                     </form>
                 </div>
-                <div class="textoCumpleA">
+                <div class="Grid1-5L">
                     <p1>Fecha de nacimiento:<br></p1>
                 </div>
-                <div class="formularioA">
+                <div class="Grid1-3">
                     <form>
                         <input type="datetime-local" id="birthdaytime" name="birthdaytime">
                     </form>
                 </div>
-                <div class="formularioB">
+                <div class="Grid3-5C">
                     <form>
                         <input type="number" placeholder="Codigo CVV">
                     </form>
                 </div>
-                <div class="formularioA">
+                <div class="Grid1-3">
                     <input type="submit" value="Comprar">
                 </div>
-                <div class="formularioB">
+                <div class="Grid3-5C">
                     <input type="submit" value="Borrar">
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </main>
-<footer id="titulo">
+<footer class="titulo">
     <div class="contenedor-flex">
         <div class="tipo5">
-            <p1>@ 2026 Mochileros sin fronteras.</p1>
+            <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="Ponerenlace.html" id="textolink"> Sobre nosotros. </a>
-            <a href="Ponerenlace.html" id="textolink"> Politica de privacidad. </a>
-            <a href="Ponerenlace.html" id="textolink"> Ayuda. </a>
+            <a href="*"> Sobre nosotros. </a>
+            <a href="*"> Politica de privacidad. </a>
+            <a href="*"> Ayuda. </a>
         </div>
         <div class="tipo2">
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="text">
+                <input type="text" id="fname" placeholder="Correo electrónico">
             </form>
         </div>
         <div class="tipo3">
-            <img src="images/icono_instagram.jpg" width = "50" height = "50" alt="Logo">
-            <img src="images/facebook_logo.jpg" width = "50" height = "50" alt="Logo">
-            <img src="images/tiktok_logo.jpg" width = "50" height = "50" alt="Logo">
+            <img src="images/twitter.jpg" width = "50" height = "50" alt="Logo">
+            <img src="images/instagram.png" width = "50" height = "50" alt="Logo">
+            <img src="images/tiktok.png" width = "50" height = "50" alt="Logo">
         </div>
     </div>
 </footer>
+
 
 </body>
 </html>

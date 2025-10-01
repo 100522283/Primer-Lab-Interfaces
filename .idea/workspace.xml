@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84524240-be78-4a8d-8bb1-d78b79f65bcd" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/images/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/corazon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mochila.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/montana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/pekin.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tiktok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/twitter.jpg" afterDir="false" />
+    <list default="true" id="84524240-be78-4a8d-8bb1-d78b79f65bcd" name="Changes" comment="actualizacion pag. principal">
+      <change afterPath="$PROJECT_DIR$/ParteB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ImagenC_Playa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/borabora.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/botas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/calendario.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/india.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/japon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lupa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/rio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/safari.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parte A.html" beforeDir="false" afterPath="$PROJECT_DIR$/Parte A.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParteC.html" beforeDir="false" afterPath="$PROJECT_DIR$/ParteC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/banner.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/estilo.css" afterDir="false" />
     </list>
@@ -65,6 +71,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -82,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758702949147</updated>
       <workItem from="1758702950380" duration="765000" />
-      <workItem from="1758705380266" duration="31756000" />
+      <workItem from="1758705380266" duration="76113000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -92,14 +99,35 @@
       <option name="project" value="LOCAL" />
       <updated>1758703061207</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="actualizacion pag. principal">
+      <option name="closed" value="true" />
+      <created>1759191944524</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759191944524</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="actualizacion pag. principal" />
+    <MESSAGE value="actualizacion principal y b" />
+    <option name="LAST_COMMIT_MESSAGE" value="actualizacion principal y b" />
   </component>
 </project>
