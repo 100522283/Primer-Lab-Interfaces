@@ -152,7 +152,7 @@ footer{
 
 .Contenedor_GridC{ /* Contenedor Grid del Apartado C, este sera dividido en 3 partes */
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px; /* tambien se puede poner como fracciones fr */
+    grid-template-columns: 20% 20% 20% 20% 20%; /* tambien se puede poner como fracciones fr */
     padding: 10px;
     justify-content: center;
 }
@@ -632,24 +632,7 @@ a{
 }
 
 @media only screen and (max-width: 700px){
-    .Contenedor_GridC{
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        padding: 10px;
-        justify-content: center;
-    }
-    .Zona1C{grid-column-start:1;
-        grid-column-end: 6;}
-    .Zona2C{grid-column-start:1;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 12;}
-    .Zona3C{
-        grid-column-start: 1;
-        grid-column-end: 6;
-        grid-row-start: 12;
 
-    }
     .contenedor-flex{
         flex-direction: column;
         align-items: center;
@@ -678,6 +661,7 @@ a{
         't1 t2'
         't3 t4'
         't5 t6';}
+
 }
 
 @media only screen and (max-width: 767px){
@@ -688,6 +672,7 @@ a{
         't3 t4'
         't5 t6';
     }
+
 
     .contenedor-grid{
         display: flex;
@@ -707,5 +692,25 @@ a{
         't4'
         't5'
         't6';
+    }
+}
+@media only screen and (max-width: 850px){
+    .Contenedor_GridC{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .Zona1C{grid-column-start:1;
+        grid-column-end: 6;}
+    .Zona2C{grid-column-start:1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 12;}
+    .Zona3C{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 12;
+
     }
 }
