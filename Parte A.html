@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/ParteA.js" type="module" defer> </script>
 </head>
 <body>
 <header class="titulo">
@@ -35,43 +36,43 @@
 <main class="fondoA">
     <div class="grid-containerA">
         <div class="TituloGrid">
-            <h2>Registro de nuevos usuario</h2>
+            <h2 id="tituloProbar">Registro de nuevos usuario</h2>
         </div>
         <div class="Grid1-3C">
-            <form>
-                <input type="text" placeholder="Nombre">
+            <form id="formularioNombre">
+                <input type="text" placeholder="Nombre" id="datosNombre">
             </form>
         </div>
         <div class="Grid3-5C">
             <form>
-                <input type="text" placeholder=" Apellidos ">
+                <input type="text" placeholder=" Apellidos " id="datosApellidos">
             </form>
         </div>
         <div class="Grid1-3C">
             <form>
-                <input type="text" placeholder="Correo electronico">
+                <input type="text" placeholder="Correo electronico" id="datosCorreo">
             </form>
         </div>
         <div class="Grid3-5C">
             <form>
-                <input type="text" placeholder="Confirmar correo">
+                <input type="text" placeholder="Confirmar correo" id="datosCorreoConfirmar">
             </form>
         </div>
 
         <div class="Grid1-5L">
             <form>
                 <p>Fecha de nacimiento:<br></p>
-                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                <input type="date" id="datosCumpleaños" name="birthdaytime">
             </form>
         </div>
         <div class="Grid1-3C">
             <form>
-                <input type="text" placeholder="login">
+                <input type="text" placeholder="login" id="datosLogin">
             </form>
         </div>
         <div class="Grid3-5C">
             <form>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" id="datosContraseña">
             </form>
         </div>
         <div class="Grid1-5L">
@@ -79,18 +80,21 @@
         </div>
         <div class="Grid1-5L">
             <form>
-                <input type="file">
+                <input type="file" id="foto">
             </form>
         </div>
         <div class="Grid1-5L">
             <form class="SinSaltoLinea">
-                <input type="checkbox">
+                <input type="checkbox" id="datosPolitica">
             </form>
             <p class="SinSaltoLinea">Acepto la </p>
             <a href="Enlace" class="SinSaltoLinea"> Politica de privacidad</a>
         </div>
-        <div class="Grid1-5R">
-            <a href="ParteB.html" class="boton">Guardar datos y acceder</a>
+        <div class="Grid1-3L">
+            <p id="textoConfirmar"></p>
+        </div>
+        <div class="Grid3-5R">
+            <a href="ParteB.html" class="boton" id="formularioGuardar">Guardar datos y acceder</a>
         </div>
 
     </div>

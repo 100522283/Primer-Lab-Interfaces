@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title> Mochileros Sin Fronteras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/ParteC.js" type="module" defer> </script>
 
 </head>
 <body>
@@ -67,12 +69,12 @@
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text" placeholder="Nombre Completo" id="datosNombre">
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder=" Correro Electronico ">
+                        <input type="text" placeholder=" Correro Electronico" id="datosCorreo">
                     </form>
                 </div>
                 <div class="Grid1-5L">
@@ -87,32 +89,35 @@
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="number" placeholder="Numero de tarjeta">
+                        <input type="number" placeholder="Numero de tarjeta" id="datosNumeroTarjeta">
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Titular de Tarjeta">
+                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="datosNombreTitular">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p>Fecha de nacimiento:<br></p>
+                    <p>Fecha de Caducidad:<br></p>
                 </div>
                 <div class="Grid1-3">
                     <form>
-                        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                        <input type="date" id="datosCaducidad" name="birthdaytime">
                     </form>
                 </div>
                 <div class="Grid3-5C">
                     <form>
-                        <input type="number" placeholder="Codigo CVV">
+                        <input type="number" placeholder="Codigo CVV" id="datosCVV">
                     </form>
                 </div>
                 <div class="Grid1-3">
-                    <input type="submit" value="Comprar">
+                    <input type="submit" name="Completar" id="formularioEnviar">
                 </div>
                 <div class="Grid3-5C">
-                    <input type="submit" value="Borrar">
+                    <input type="submit" value="Borrar" id="formularioBorrar">
+                </div>
+                <div class="Grid1-5L">
+                    <p id="textoConfirmar"></p>
                 </div>
             </div>
         </div>
