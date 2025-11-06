@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> Mochileros Sin Fronteras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/ParteC.js" type="module" defer> </script>
+
+</head>
+<body>
+<header class="titulo">
+    <div class="contenedor-flex">
+        <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
+        <div class="tipo2">
+            <a href="*"> Inicio </a>
+            <a href="*"> Experiencias </a>
+            <a href="*"> Consejos </a>
+            <a href="*"> Foro </a>
+            <a href="*"> Contacto</a>
+        </div>
+        <div class="tipo3">
+            <form>
+                <select name="idioma" id="idioma">
+                    <option value="ES">ES</option>
+                </select>
+            </form>
+            <img src="images/mochila.png" alt="Mochila">
+        </div>
+
+    </div>
+
+</header>
+<main>
+    <div class="Contenedor_GridC">
+        <div class="Zona1Cn">
+            <div class="Contenedor_Grid1C">
+                <div class="Grid1-3L">
+                    <p class="TextoFondoBlanco"> Pack Noruega: </p>
+                </div>
+                <div class="Grid4-5R">
+                    <p class="TextoFondoBlanco"> 900€</p>
+                </div>
+                <div class="Grid1-5L">
+                    <p class="TextoFondoBlanco">Escapa del calor de Madrid
+                        al mejor precio</p>
+                </div>
+            </div>
+        </div>
+        <div class="Zona2C" >
+            <h4>Descripcion del pack:</h4>
+            <p>Embárcate en una experiencia única con nuestro Pack
+                Aventurero “Ice frío hielo”.
+                Diseñado para quienes buscan combinar naturaleza, cultura y diversión,
+                este paquete incluye alojamiento en hoteles seleccionados, excursiones guiadas a paisajes increíbles
+                y actividades emocionantes para todos los gustos.
+                Descubre senderos ocultos, disfruta de icebergs y cascadas y
+                degusta la gastronomía local
+                mientras nuestro equipo se encarga de cada detalle. Ideal para parejas, familias o amigos,
+                nuestro pack te garantiza momentos inolvidables y la comodidad de tener todo planificado para que
+                solo tengas que preocuparte por disfrutar.
+                ¡Prepárate para crear recuerdos que durarán toda la vida!</p>
+
+        </div>
+        <div class="Zona3C">
+            <div class="grid-container3C">
+                <div class="TituloGrid">
+                    <h2>Formulario de compra</h2>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="text" placeholder="Nombre Completo" id="datosNombre">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="text" placeholder=" Correro Electronico" id="datosCorreo">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <p>Tipo de Tarjeta:</p>
+                </div>
+                <div class="Grid1-5L">
+                    <select>
+                        <option>Visa</option>
+                        <option>Mastercard</option>
+                        <option>GooglePay</option>
+                    </select>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="number" placeholder="Numero de tarjeta" id="datosNumeroTarjeta">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="datosNombreTitular">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <p>Fecha de Caducidad:<br></p>
+                </div>
+                <div class="Grid1-3">
+                    <form>
+                        <input type="date" id="datosCaducidad" name="birthdaytime">
+                    </form>
+                </div>
+                <div class="Grid3-5C">
+                    <form>
+                        <input type="number" placeholder="Codigo CVV" id="datosCVV">
+                    </form>
+                </div>
+                <div class="Grid1-3">
+                    <input type="submit" name="Completar" id="formularioEnviar">
+                </div>
+                <div class="Grid3-5C">
+                    <input type="submit" value="Borrar" id="formularioBorrar">
+                </div>
+                <div class="Grid1-5L">
+                    <p id="textoConfirmar"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="titulo">
+    <div class="contenedor-flex">
+        <div class="tipo5">
+            <p>© 2025 Mochileros sin fronteras.</p>
+        </div>
+        <div class="tipo2">
+            <a href="*"> Sobre nosotros. </a>
+            <a href="*"> Politica de privacidad. </a>
+            <a href="*"> Ayuda. </a>
+            <form>
+                <label for="fname"> Newsletter:</label>
+                <input type="email" id="fname"
+                       placeholder="Correo electrónico">
+            </form>
+        </div>
+        <div class="tipo3">
+            <img src="images/twitter.jpg" alt="Logo" class="logo">
+            <img src="images/instagram.png" alt="Logo" class="logo">
+            <img src="images/tiktok.png" alt="Logo" class="logo">
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

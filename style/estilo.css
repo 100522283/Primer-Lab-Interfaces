@@ -184,6 +184,37 @@ footer{
     font-size: 10px;
     background-image: url("../images/ImagenC_Playa.jpg");
     padding: 10px;
+    background-size: cover;
+}
+
+.Zona1Cn{ /* La primera zona va de la columna 1 al 3 y fila del 1 al 3 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border: 1px solid black;
+    margin: 10px;
+    text-align: left;
+    font-size: 10px;
+    background-image: url("../images/noruega.jpg");
+    padding: 10px;
+    background-size: cover;
+}
+
+.Zona1Cr{ /* La primera zona va de la columna 1 al 3 y fila del 1 al 3 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border: 1px solid black;
+    margin: 10px;
+    text-align: left;
+    font-size: 10px;
+    background-image: url("../images/rumania.jpg");
+    padding: 10px;
+    background-size: cover;
 }
 
 .Zona2C{ /* La segunda zona va de la columna 1 al 3 y fila 3 al 12*/
@@ -359,7 +390,7 @@ a{
     display: grid;
     width: 670px;
     height: 300px;
-    background-image: url("../images/ImagenC_Playa.jpg");
+
     background-size: cover;
     grid-template-areas:
     'titulo_pack precio_pack'
@@ -369,6 +400,23 @@ a{
     padding: 10px;
     border-radius: 10px;
 }
+
+.oculto {
+    display: none;
+}
+
+#pack_carrusel1 {
+    background-image: url("../images/ImagenC_Playa.jpg");
+}
+
+#pack_carrusel3 {
+    background-image: url("../images/noruega.jpg");
+}
+
+#pack_carrusel2 {
+    background-image: url("../images/rumania.jpg");
+}
+
 
 
 #flecha_izq{
