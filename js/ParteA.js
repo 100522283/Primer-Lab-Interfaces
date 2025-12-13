@@ -6,6 +6,7 @@ import{ComprobarCorreo} from "./LoginFucniones.mjs";
 import{ComprobarFoto} from "./LoginFucniones.mjs";
 import{GuardarDatosLogin} from "./FuncionesTipicas.mjs";
 import{convertirFoto} from "./FuncionesTipicas.mjs";
+import {cambiar_idioma, inicializar_pagina} from "./Traducciones.mjs";
 
 
 let politica = false;
@@ -82,5 +83,47 @@ async function EnviarDatos() {
 
 }
 
+function iniciar_sesion() {
+    event.preventDefault()
+    let usuario = document.getElementById("usuario").value;
+    let password = document.getElementById("contrasena").value;
+    let usuarios = localStorage.getItem("DatosUsuarios");
+
+    if (usuarios === null) {
+        alert("Usuario o contraseña incorrectos");
+        return;
+    }
+
+    usuarios = JSON.parse(usuarios);
+    let usuario_encontrado = false;
+    let i = 0;
+    while (i < usuarios.length && usuario_encontrado === false) {
+        if (usuarios[i].login === usuario && usuarios[i].contraseña === password) {
+            localStorage.setItem("usuario_logueado", JSON.stringify(usuarios[i]));
+            usuario_encontrado = true;
+        }
+        i += 1
+    }
+
+    if (usuario_encontrado) {
+        window.location.href = "ParteB.html";
+    } else {
+        alert("Usuario o contraseña incorrectos");
+    }
+}
+
+
 $("#formularioGuardar").click(EnviarDatos)
 $("#datosPolitica").click(AceptarPolitica)
+$("#login-button").click(iniciar_sesion);
+
+window.onload = function(){
+    inicializar_pagina();
+    const seleccionar_idioma = document.getElementById('idioma');
+
+    if (seleccionar_idioma) {
+        seleccionar_idioma.addEventListener('change', function(event) {
+            cambiar_idioma(event.target.value);
+        });
+    }
+}

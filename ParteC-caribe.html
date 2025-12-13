@@ -14,21 +14,25 @@
 <body>
 <header class="titulo">
     <div class="contenedor-flex">
+        <div class="tipo3">
+            <img src="images/mochila.png" alt="Mochila">
+        </div>
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
         <div class="tipo2">
-            <a href="*"> Inicio </a>
-            <a href="*"> Experiencias </a>
-            <a href="*"> Consejos </a>
-            <a href="*"> Foro </a>
-            <a href="*"> Contacto</a>
+            <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
+            <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+            <a href="ParteC-caribe.html" data-i18n="header_foro"> Foro </a>
+            <a href="ParteC-caribe.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
         </div>
         <div class="tipo3">
             <form>
                 <select name="idioma" id="idioma">
-                    <option value="ES">ES</option>
+                    <option value="ES">🇪🇸</option>
+                    <option value="EN">🇬🇧</option>
                 </select>
             </form>
-            <img src="images/mochila.png" alt="Mochila">
+
         </div>
 
     </div>
@@ -60,6 +64,18 @@
                 nuestro pack te garantiza momentos inolvidables y la comodidad de tener todo planificado para que
                 solo tengas que preocuparte por disfrutar.
                 ¡Prepárate para crear recuerdos que durarán toda la vida!</p>
+            <form id="form_tips">
+                <h3 data-i18n="titulo_resena">Deja tu Reseña</h3>
+                <input type="text" id="nombre_resena" placeholder="Título de la reseña" data-i18n-placeholder="titulo_resena_ph">
+                <textarea id="texto_resena" placeholder="Escribe tu opinión aquí..." data-i18n-placeholder="texto_resena_ph"></textarea>
+                <a href="#" class="boton" id="enviar_resena" data-i18n="boton_enviar_resena">Enviar Reseña</a>
+            </form>
+
+            <section id="seccion_resenas">
+                <h3 data-i18n="resenas_titulo">Últimas Reseñas</h3>
+                <div id="contenedor_resenas">
+                </div>
+            </section>
 
         </div>
         <div class="Zona3C">
@@ -110,6 +126,25 @@
                         <input type="number" placeholder="Codigo CVV" id="datosCVV">
                     </form>
                 </div>
+                <div class="Grid1-5L">
+                    <label for="numPersonas" data-i18n="label_num_personas">Número de Personas:</label>
+                    <select id="numPersonas" name="numPersonas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <div class="Grid1-5L">
+                    <label for="mascota" data-i18n="label_mascota">¿Viaja con Mascota? (Indicar tipo)</label>
+                    <input type="text" id="mascota" placeholder="Ej: Sí, perro pequeño" data-i18n-placeholder="ej_mascota_ph">
+                </div>
+
+                <div class="Grid1-5L">
+                    <label for="alergias" data-i18n="label_alergias">Alergias o Requerimientos Especiales</label>
+                    <input type="text" id="alergias" placeholder="Ej: Alergia a frutos secos" data-i18n-placeholder="ej_alergias_ph">
+                </div>
                 <div class="Grid1-3">
                     <input type="submit" name="Completar" id="formularioEnviar">
                 </div>
@@ -129,9 +164,9 @@
             <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="*"> Sobre nosotros. </a>
-            <a href="*"> Politica de privacidad. </a>
-            <a href="*"> Ayuda. </a>
+            <a href="ParteC-caribe.html"> Sobre nosotros. </a>
+            <a href="ParteC-caribe.html"> Politica de privacidad. </a>
+            <a href="ParteC-caribe.html"> Ayuda. </a>
             <form>
                 <label for="fname"> Newsletter:</label>
                 <input type="email" id="fname"

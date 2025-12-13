@@ -1,36 +1,8 @@
-// Para iniciar sesión la funcion lee los inputs y los compara con los
-// datos de local storage para ver si el usuario existe o no
-function iniciar_sesion() {
-    event.preventDefault()
-    let usuario = document.getElementById("usuario").value;
-    let password = document.getElementById("contrasena").value;
-    let usuarios = localStorage.getItem("DatosUsuarios");
-
-    if (usuarios === null) {
-        alert("Usuario o contraseña incorrectos");
-        return;
-    }
-
-    usuarios = JSON.parse(usuarios);
-    let usuario_encontrado = false;
-    let i = 0;
-    while (i < usuarios.length && usuario_encontrado === false) {
-        if (usuarios[i].login === usuario && usuarios[i].contraseña === password) {
-            localStorage.setItem("usuario_logueado", JSON.stringify(usuarios[i]));
-            usuario_encontrado = true;
-        }
-        i += 1
-    }
-
-    if (usuario_encontrado) {
-        window.location.href = "ParteB.html";
-    } else {
-        alert("Usuario o contraseña incorrectos");
-    }
-}
+import {cambiar_idioma, inicializar_pagina} from "./Traducciones.mjs";
 
 window.onload = function() {
-    document.getElementById("login").onclick = iniciar_sesion;
+    inicializar_pagina();
+    
     // Para el carrusel vamos ocultando todos los packs menos el que tiene
     // el indice actual. El indice cambia al pulsar las flechas o cada 2
     // segundos, lo que pase antes.
@@ -77,4 +49,12 @@ window.onload = function() {
 
     enseñar_pack();
     empezar_temporizador();
+
+    const seleccionar_idioma = document.getElementById('idioma');
+
+    if (seleccionar_idioma) {
+        seleccionar_idioma.addEventListener('change', function(event) {
+            cambiar_idioma(event.target.value);
+        });
+    }
 }

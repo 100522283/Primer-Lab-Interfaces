@@ -21,8 +21,8 @@
         <div class="tipo2">
             <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
             <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
-            <a href="ParteC-noruega.html" data-i18n="header_foro"> Foro </a>
-            <a href="ParteC-noruega.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="ParteC-tokyo.html" data-i18n="header_foro"> Foro </a>
+            <a href="ParteC-tokyo.html" data-i18n="header_contacto"> Contacto</a>
             <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
         </div>
         <div class="tipo3">
@@ -40,33 +40,27 @@
 </header>
 <main>
     <div class="Contenedor_GridC">
-        <div class="Zona1Cn">
+
+        <div class="Zona1Ct">
             <div class="Contenedor_Grid1C">
                 <div class="Grid1-3L">
-                    <p class="TextoFondoBlanco"> Pack Noruega: </p>
+                    <p class="TextoFondoBlanco" data-i18n="tokyo_titulo"></p>
                 </div>
                 <div class="Grid4-5R">
-                    <p class="TextoFondoBlanco"> 900€</p>
+                    <p class="TextoFondoBlanco" data-i18n="tokyo_precio"></p>
                 </div>
                 <div class="Grid1-5L">
-                    <p class="TextoFondoBlanco">Escapa del calor de Madrid
-                        al mejor precio</p>
+                    <p class="TextoFondoBlanco"
+                       data-i18n="tokyo_slogan"></p>
                 </div>
             </div>
         </div>
+
         <div class="Zona2C" >
             <h4>Descripcion del pack:</h4>
-            <p>Embárcate en una experiencia única con nuestro Pack
-                Aventurero “Ice frío hielo”.
-                Diseñado para quienes buscan combinar naturaleza, cultura y diversión,
-                este paquete incluye alojamiento en hoteles seleccionados, excursiones guiadas a paisajes increíbles
-                y actividades emocionantes para todos los gustos.
-                Descubre senderos ocultos, disfruta de icebergs y cascadas y
-                degusta la gastronomía local
-                mientras nuestro equipo se encarga de cada detalle. Ideal para parejas, familias o amigos,
-                nuestro pack te garantiza momentos inolvidables y la comodidad de tener todo planificado para que
-                solo tengas que preocuparte por disfrutar.
-                ¡Prepárate para crear recuerdos que durarán toda la vida!</p>
+            <p data-i18n="tokyo_desc">
+
+            </p>
             <form id="form_tips">
                 <h3 data-i18n="titulo_resena">Deja tu Reseña</h3>
                 <input type="text" id="nombre_resena" placeholder="Título de la reseña" data-i18n-placeholder="titulo_resena_ph">
@@ -80,23 +74,24 @@
                 </div>
             </section>
         </div>
+
         <div class="Zona3C">
             <div class="grid-container3C">
                 <div class="TituloGrid">
-                    <h2>Formulario de compra</h2>
+                    <h2 data-i18n="form_titulo">Formulario de compra</h2>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Completo" id="datosNombre">
+                        <input type="text" placeholder="Nombre Completo" id="datosNombre" data-i18n-placeholder="form_nombre">
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder=" Correro Electronico" id="datosCorreo">
+                        <input type="text" placeholder="Correo Electrónico" id="datosCorreo" data-i18n-placeholder="form_correo">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p>Tipo de Tarjeta:</p>
+                    <p data-i18n="form_tipo_tarjeta">Tipo de Tarjeta:</p>
                 </div>
                 <div class="Grid1-5L">
                     <select>
@@ -107,16 +102,16 @@
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="number" placeholder="Numero de tarjeta" id="datosNumeroTarjeta">
+                        <input type="number" placeholder="Número de tarjeta" id="datosNumeroTarjeta" data-i18n-placeholder="form_num_tarjeta">
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="datosNombreTitular">
+                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="datosNombreTitular" data-i18n-placeholder="form_titular">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p>Fecha de Caducidad:<br></p>
+                    <p data-i18n="form_caducidad">Fecha de Caducidad:<br></p>
                 </div>
                 <div class="Grid1-3">
                     <form>
@@ -125,7 +120,7 @@
                 </div>
                 <div class="Grid3-5C">
                     <form>
-                        <input type="number" placeholder="Codigo CVV" id="datosCVV">
+                        <input type="number" placeholder="Código CVV" id="datosCVV" data-i18n-placeholder="form_cvv">
                     </form>
                 </div>
                 <div class="Grid1-5L">
@@ -148,10 +143,10 @@
                     <input type="text" id="alergias" placeholder="Ej: Alergia a frutos secos" data-i18n-placeholder="ej_alergias_ph">
                 </div>
                 <div class="Grid1-3">
-                    <input type="submit" name="Completar" id="formularioEnviar">
+                    <input type="submit" value="Completar" id="formularioEnviar" data-i18n="form_boton_enviar">
                 </div>
                 <div class="Grid3-5C">
-                    <input type="submit" value="Borrar" id="formularioBorrar">
+                    <input type="submit" value="Borrar" id="formularioBorrar" data-i18n="form_boton_borrar">
                 </div>
                 <div class="Grid1-5L">
                     <p id="textoConfirmar"></p>
@@ -166,13 +161,13 @@
             <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="ParteC-noruega.html"> Sobre nosotros. </a>
-            <a href="ParteC-noruega.html"> Politica de privacidad. </a>
-            <a href="ParteC-noruega.html"> Ayuda. </a>
+            <a href="ParteC-tokyo.html" data-i18n="link_nosotros"> Sobre nosotros. </a>
+            <a href="ParteC-tokyo.html" data-i18n="link_politica"> Politica de privacidad.
+            </a>
+            <a href="ParteC-tokyo.html" data-i18n="link_ayuda"> Ayuda. </a>
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="email" id="fname"
-                       placeholder="Correo electrónico">
+                <input type="email" id="fname" placeholder="Correo electrónico" data-i18n-placeholder="correo">
             </form>
         </div>
         <div class="tipo3">
@@ -182,7 +177,5 @@
         </div>
     </div>
 </footer>
-
-
 </body>
 </html>
