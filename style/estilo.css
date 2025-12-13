@@ -139,6 +139,13 @@ footer{
     text-align: left;
 
 }
+.Grid1-5C{
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
 .Grid1-5R{
     grid-column-start: 1;
     grid-column-end: 5;
@@ -157,15 +164,21 @@ footer{
 .grid-containerA { /* Contenedor grid para el formulario de la Zona A */
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    padding: 70px;
+    padding: 30px;
     justify-content: center;
 
 }
 
 .grid-containerA > div {
-    padding: 20px;
+    padding: 15px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+.contenedor-ambos-formularios {
+    display: flex;
+    gap: 40px; /* separación entre formularios */
+    justify-content: center;
 }
 
 .Contenedor_GridC{ /* Contenedor Grid del Apartado C, este sera dividido en 3 partes */
@@ -398,6 +411,7 @@ a{
 
 .aside{
     display: flex;
+    max-height: 470px;
     grid-area: aside;
     border: 1px solid black;
     border-radius: 10px;
@@ -797,6 +811,8 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 #seccion_resenas {
