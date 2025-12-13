@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/ParteA.js" type="module" defer> </script>
-
 </head>
 <body>
 <header class="titulo">
@@ -32,100 +31,119 @@
                     <option value="EN">🇬🇧</option>
                 </select>
             </form>
+            <img src="images/mochila.png" alt="Mochila">
         </div>
+
     </div>
 
 </header>
 
 <main class="fondoA">
-    <div class="contenedor-dividido">
-        <div class="parte-registro">
-            <div class="grid-containerA">
-                <div class="TituloGrid">
-                    <h2 id="tituloProbar">Registro de nuevos usuario</h2>
-                </div>
-                <div class="Grid1-3C">
-                    <form id="formularioNombre">
-                        <input type="text" placeholder="Nombre" id="datosNombre">
-                    </form>
-                </div>
-                <div class="Grid3-5C">
-                    <form>
-                        <input type="text" placeholder=" Apellidos " id="datosApellidos">
-                    </form>
-                </div>
-                <div class="Grid1-3C">
-                    <form>
-                        <input type="text" placeholder="Correo electronico" id="datosCorreo">
-                    </form>
-                </div>
-                <div class="Grid3-5C">
-                    <form>
-                        <input type="text" placeholder="Confirmar correo" id="datosCorreoConfirmar">
-                    </form>
-                </div>
+    <div class="contenedor-ambos-formularios">
+        <div class="grid-containerA">
+            <div class="TituloGrid">
+                <h2 id="tituloProbar">Registro de nuevos usuario</h2>
+                <hr>
+            </div>
+            <div class="Grid1-3C">
+                <form id="formularioNombre">
+                    <input type="text" placeholder="Nombre" id="datosNombre">
+                </form>
+            </div>
+            <div class="Grid3-5C">
+                <form>
+                    <input type="text" placeholder=" Apellidos " id="datosApellidos">
+                </form>
+            </div>
+            <div class="Grid1-3C">
+                <form>
+                    <input type="text" placeholder="Correo electronico" id="datosCorreo">
+                </form>
+            </div>
+            <div class="Grid3-5C">
+                <form>
+                    <input type="text" placeholder="Confirmar correo" id="datosCorreoConfirmar">
+                </form>
+            </div>
 
-                <div class="Grid1-5L">
-                    <form>
-                        <p>Fecha de nacimiento:<br></p>
-                        <input type="date" id="datosCumpleaños" name="birthdaytime">
-                    </form>
-                </div>
-                <div class="Grid1-3C">
-                    <form>
-                        <input type="text" placeholder="login" id="datosLogin">
-                    </form>
-                </div>
-                <div class="Grid3-5C">
-                    <form>
-                        <input type="password" placeholder="password" id="datosContraseña">
-                    </form>
-                </div>
-                <div class="Grid1-5L">
-                    <p>Subir imagen de perfil</p>
-                </div>
-                <div class="Grid1-5L">
-                    <form>
-                        <input type="file" id="foto">
-                    </form>
-                </div>
-                <div class="Grid1-5L">
-                    <form class="SinSaltoLinea">
-                        <input type="checkbox" id="datosPolitica">
-                    </form>
-                    <p class="SinSaltoLinea">Acepto la </p>
-                    <a href="Enlace" class="SinSaltoLinea"> Politica de privacidad</a>
-                </div>
-                <div class="Grid3-5R">
-                    <a href="ParteB.html" class="boton" id="formularioGuardar">Guardar datos y acceder</a>
-                </div>
+            <div class="Grid1-5L">
+                <form>
+                    <p>Fecha de nacimiento:<br></p>
+                    <input type="date" id="datosCumpleaños" name="birthdaytime">
+                </form>
+            </div>
+            <div class="Grid1-3C">
+                <form>
+                    <input type="text" placeholder="login" id="datosLogin">
+                </form>
+            </div>
+            <div class="Grid3-5C">
+                <form>
+                    <input type="password" placeholder="password" id="datosContraseña">
+                </form>
+            </div>
+            <div class="Grid1-5L">
+                <form class="SinSaltoLinea">
+                    <input type="checkbox" id="mayorDe18">
+                </form>
+                <p class="SinSaltoLinea">Mayor de 18 años</p>
+            </div>
+            <div class="Grid1-5L">
+                <textarea id="infoExtra" name="infoExtra" rows="5" cols="50" placeholder="Escribe información adicional aquí..."></textarea>
+            </div>
+            <div class="Grid1-5L">
+                <form class="SinSaltoLinea">
+                    <input type="checkbox" id="datosPolitica">
+                </form>
+                <p class="SinSaltoLinea">Acepto la </p>
+                <a href="Enlace" class="SinSaltoLinea"> Politica de privacidad</a>
+            </div>
+            <div class="Grid1-3L">
+                <p id="textoConfirmar"></p>
+            </div>
+            <div class="Grid3-5R">
+                <a href="ParteB.html" class="boton" id="formularioGuardar">Guardar datos y acceder</a>
             </div>
         </div>
-        <div class="parte-login">
-            <div class="flex-vertical">
-                <div>
-                    <h2 data-i18n="login">Iniciar Sesión</h2>
-                </div>
-                <form id="formulario-login">
-                    <div class="Grid1-5L">
-                        <input type="text" id="usuario" placeholder="Usuario" data-i18n-placeholder="usuario">
-                    </div>
-                    <div class="Grid1-5L">
-                        <input type="password" id="contrasena" placeholder="Contraseña" data-i18n-placeholder="contrasena">
-                    </div>
-                    <div class="Grid1-5L">
-                        <label id="recordar">
-                            <input type="checkbox">
-                            <span data-i18n="recordar">Recordar contraseña</span>
-                        </label>
-                    </div>
-                    <div class="Grid1-5L">
-                        <a href="#" class="boton" id="login-button" data-i18n="login">Iniciar sesión</a>
-                    </div>
+
+
+
+        <div class="grid-containerA">
+            <div class="TituloGrid">
+                <h2>Ó Iniciar Sesion</h2>
+                <hr>
+            </div>
+            <div class="Grid1-5L">
+                <p>Iniciar sesion con nombre de usuario y contraseña:</p>
+            </div>
+
+            <div class="Grid1-5L">
+                <form>
+                    <input type="text" placeholder=" Usuario " id="loginUsuario">
                 </form>
+            </div>
+            <div class="Grid1-5L">
+                <form>
+                    <input type="text" placeholder="Contraseña" id="loginContrasena">
+                </form>
+            </div>
+            <div class="Grid1-5R">
+                <a href="ParteB.html" class="boton" id="loginConfirmar">Guardar datos y acceder</a>
+
+            </div>
+
+            <div class="Grid1-5L">
+                <hr>
+                <p> Ó iniciar sesion con: </p>
+            </div>
+            <div class="Grid1-5C">
+                <img src="images/Google_Favicon_2025.svg.webp" alt="Logo" class="logo">
+                <img src="images/facebook_logo2.png" alt="Logo" class="logo">
+                <img src="images/Apple_logo_black.svg" alt="Logo" class="logo">
             </div>
         </div>
     </div>
+
 </main>
 <footer class="titulo">
     <div class="contenedor-flex">
