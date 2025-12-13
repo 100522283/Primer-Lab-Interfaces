@@ -8,27 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="js/ParteB.js"></script>
+    <script src="js/ParteB.js" type="module"></script>
 
 </head>
 <body>
 <header class="titulo">
     <div class="contenedor-flex">
+        <div class="tipo3">
+            <img src="images/mochila.png" alt="Mochila">
+        </div>
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
         <div class="tipo2">
-            <a href="*"> Inicio </a>
-            <a href="*"> Experiencias </a>
-            <a href="*"> Consejos </a>
-            <a href="*"> Foro </a>
-            <a href="*"> Contacto</a>
+            <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
+            <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+            <a href="ParteB.html" data-i18n="header_foro"> Foro </a>
+            <a href="ParteB.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
         </div>
         <div class="tipo3">
             <form>
                 <select name="idioma" id="idioma">
-                    <option value="ES">ES</option>
+                    <option value="ES">🇪🇸</option>
+                    <option value="EN">🇬🇧</option>
                 </select>
             </form>
-            <img src="images/mochila.png" alt="Mochila">
         </div>
 
     </div>
@@ -36,236 +39,241 @@
 </header>
 <main>
     <div class="contenedor-grid">
-        <div>
-            <div class="main-superior">
-                <div class="banner">
-                    <div id="texto_banner">
-                        <h2>¿Estás listo para descubrir tu próxima
-                            aventura?</h2>
-                    </div>
+        <div class="main-superior">
+            <div class="banner">
+                <div id="texto_banner">
+                    <h2 data-i18n="texto_banner">¿Estás listo para
+                        descubrir tu próxima
+                        aventura?</h2>
                 </div>
-                <div id="carrusel">
-                    <div id="flecha_izq" class="boton"> &lt; </div>
-                        <div id ="pack_carrusel1" class="pack_carrusel">
-                            <div class="titulo_pack">
-                                <h3>Pack Caribe:</h3>
-                            </div>
-                            <div class="texto_pack">Una experiencia que abordara
-                                todo tipo de naturaleza Caribeña desde junglas
-                                a mar, todo incluido
-                            </div>
-                            <div class="comprar_pack">
-                                <a href="ParteC-caribe.html" class="boton">Comprar</a>
-                            </div>
-                            <div class="precio_pack">1000$</div>
-                        </div>
+            </div>
+            <div id="carrusel">
+                <div id="flecha_izq" class="boton"> &lt; </div>
+                <div id ="pack_carrusel1" class="pack_carrusel">
+                    <div class="titulo_pack">
+                        <h3 data-i18n="titulo_pack1">Pack Caribe:</h3>
+                    </div>
+                    <div class="texto_pack" data-i18n="texto_pack1">Una
+                        experiencia que
+                        abordara
+                        todo tipo de naturaleza Caribeña desde junglas
+                        a mar, todo incluido
+                    </div>
+                    <div class="comprar_pack">
+                        <a href="ParteC-caribe.html" class="boton"
+                           data-i18n="boton_comprar">Comprar</a>
+                    </div>
+                    <div class="precio_pack">1000$</div>
+                </div>
 
-                        <div id="pack_carrusel2" class="pack_carrusel">
-                            <div class="titulo_pack">
-                                <h3>Pack Rumanía:</h3>
-                            </div>
-                            <div class="texto_pack">Naturaleza de cuento
-                            </div>
-                            <div class="comprar_pack">
-                                <a href="ParteC-rumania.html" class="boton">Comprar
-                                </a>
-                            </div>
-                            <div class="precio_pack">500€</div>
-                        </div>
+                <div id="pack_carrusel2" class="pack_carrusel">
+                    <div class="titulo_pack">
+                        <h3 data-i18n="titulo_pack2">Pack Rumanía:</h3>
+                    </div>
+                    <div class="texto_pack"
+                         data-i18n="texto_pack2">Naturaleza de cuento
+                    </div>
+                    <div class="comprar_pack">
+                        <a href="ParteC-rumania.html" class="boton"
+                           data-i18n="boton_comprar">Comprar
+                        </a>
+                    </div>
+                    <div class="precio_pack">500€</div>
+                </div>
 
-                        <div id="pack_carrusel3" class="pack_carrusel">
-                            <div class="titulo_pack">
-                                <h3>Pack Noruega:</h3>
-                            </div>
-                            <div class="texto_pack">Huye del calor
-                            </div>
-                            <div class="comprar_pack">
-                                <a href="ParteC-noruega.html" class="boton">Comprar
-                                </a>
-                            </div>
-                            <div class="precio_pack">900€</div>
-                        </div>
-                    <div id="flecha_der" class="boton"> > </div>
+                <div id="pack_carrusel3" class="pack_carrusel">
+                    <div class="titulo_pack">
+                        <h3 data-i18n="titulo_pack3">Pack Noruega:</h3>
+                    </div>
+                    <div class="texto_pack" data-i18n="texto_pack3">Huye
+                        del calor
+                    </div>
+                    <div class="comprar_pack">
+                        <a href="ParteC-noruega.html" class="boton"
+                           data-i18n="boton_comprar">Comprar
+                        </a>
+                    </div>
+                    <div class="precio_pack">900€</div>
+                </div>
+
+                <div id="flecha_der" class="boton"> > </div>
+            </div>
+        </div>
+        <div class="main-inferior">
+
+            <div class="titulo_seccion" id="titulo_experiencias">
+                <h3 data-i18n="titulo_experiencias">¡Elige tu
+                    experiencia!</h3>
+            </div>
+
+            <div class="tarjeta" id="tarjeta1">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta1">Tour express por Pekín</h4>
+                </div>
+                <div class="foto_tarjeta">
+                    <img src="images/pekin.jpg" alt="Pekin">
+                </div>
+                <div class="like">
+                    <a href="ParteB.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
+                </div>
+                <div class="ver_mas">
+                    <a href="ParteC-pekin.html" class="boton"
+                       data-i18n="boton_vermas">Ver más</a>
                 </div>
             </div>
 
-            <div class="main-inferior">
-
-                <div class="titulo_seccion" id="titulo_experiencias">
-                    <h3>¡Elige tu experiencia!</h3>
+            <div class="tarjeta" id="tarjeta2">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta2">Empápate de Bora Bora</h4>
                 </div>
-
-                <div class="tarjeta" id="tarjeta1">
-                    <div class="titulo_tarjeta">
-                        <h4>Tour express por Pekín</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/pekin.jpg" alt="Pekin">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
+                <div class="foto_tarjeta">
+                    <img src="images/borabora.jpg" alt="Bora Bora">
                 </div>
-
-                <div class="tarjeta" id="tarjeta2">
-                    <div class="titulo_tarjeta">
-                        <h4>Empápate de Bora Bora</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/borabora.jpg" alt="Bora Bora">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
+                <div class="like">
+                    <a href="ParteB.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
                 </div>
-
-                <div class="tarjeta"  id="tarjeta3">
-                    <div class="titulo_tarjeta">
-                        <h4>Baila al ritmo de Río</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/rio.jpg" alt="Río de Janeiro">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
-                </div>
-
-                <div class="tarjeta" id="tarjeta4">
-                    <div class="titulo_tarjeta">
-                        <h4>Dale color a tu vida en India</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/india.jpeg" alt="India">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
-                </div>
-
-                <div class="tarjeta" id="tarjeta5">
-                    <div class="titulo_tarjeta">
-                        <h4>Descubre el Tokyo tecnológico</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/japon.jpg" alt="Japón">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
-                </div>
-
-                <div class="tarjeta" id="tarjeta6">
-                    <div class="titulo_tarjeta">
-                        <h4>Despierta tu fiera en el Serengeti</h4>
-                    </div>
-                    <div class="foto_tarjeta">
-                        <img src="images/safari.jpg" alt="Safari">
-                    </div>
-                    <div class="like">
-                        <a href="Parte%20A.html">
-                            <img src="images/corazon.png" alt="Icono like">
-                        </a>
-                    </div>
-                    <div class="ver_mas">
-                        <a href="Parte%20A.html" class="boton">Ver más </a>
-                    </div>
+                <div class="ver_mas">
+                    <a href="ParteC-borabora.html" class="boton"
+                       data-i18n="boton_vermas">Ver más</a>
                 </div>
             </div>
+
+            <div class="tarjeta"  id="tarjeta3">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta3">Baila al ritmo de Río</h4>
+                </div>
+                <div class="foto_tarjeta">
+                    <img src="images/rio.jpg" alt="Río de Janeiro">
+                </div>
+                <div class="like">
+                    <a href="ParteB.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
+                </div>
+                <div class="ver_mas">
+                    <a href="ParteC-rio.html" class="boton"
+                       data-i18n="boton_vermas">Ver más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" id="tarjeta4">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta4">Dale color a tu vida en
+                        India</h4>
+                </div>
+                <div class="foto_tarjeta">
+                    <img src="images/india.jpeg" alt="India">
+                </div>
+                <div class="like">
+                    <a href="ParteB.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
+                </div>
+                <div class="ver_mas">
+                    <a href="ParteC-india.html" class="boton"
+                       data-i18n="boton_vermas">Ver más</a>
+                </div>
+            </div>
+
+            <div class="tarjeta" id="tarjeta5">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta5">Descubre el Tokyo
+                        tecnológico</h4>
+                </div>
+                <div class="foto_tarjeta">
+                    <img src="images/japon.jpg" alt="Japón">
+                </div>
+                <div class="like">
+                    <a href="ParteB.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
+                </div>
+                <div class="ver_mas">
+                    <a href="ParteC-tokyo.html" class="boton"
+                       data-i18n="boton_vermas">Ver más</a>
+                </div>
+            </div>
+            <!--
+            <div class="tarjeta" id="tarjeta6">
+                <div class="titulo_tarjeta">
+                    <h4 data-i18n="tarjeta6">Despierta tu fiera en el
+                        Serengeti</h4>
+                </div>
+                <div class="foto_tarjeta">
+                    <img src="images/safari.jpg" alt="Safari">
+                </div>
+                <div class="like">
+                    <a href="Parte%20A.html">
+                        <img src="images/corazon.png" alt="Icono like">
+                    </a>
+                </div>
+                <div class="ver_mas">
+                    <a href="Parte%20A.html" class="boton" data-i18n="boton_vermas">Ver más </a>
+                </div>
+
+            </div>
+            -->
         </div>
 
         <aside class="aside">
-            <div id="datos_perfil">
-                <h3 id="nombre_perfil"></h3>
-                <img src="#" alt="Foto de perfil"
-                     id="foto_perfil">
-                <a href="*" id="logout" class="boton">Cerrar sesión</a>
-            </div>
-
-            <section>
+            <div>
+                <div id="datos_perfil">
+                    <h3 id="nombre_perfil"></h3>
+                    <img src="#" alt="Foto de perfil"
+                         id="foto_perfil">
+                    <a href="ParteB.html" id="logout" class="boton">Cerrar
+                        sesión</a>
+                </div>
                 <form id="tipos_experiencias">
-                    <h3 id="checks_experiencias">¿Qué experiencia estás
+                    <h3 id="checks_experiencias"
+                        data-i18n="que_experiencia">¿Qué
+                        experiencia estás
                         buscando?</h3>
                     <label id="adrenalina">
-                        <input type="checkbox"> Adrenalina máxima
+                        <input type="checkbox">
+                        <span data-i18n="adrenalina">Adrenalina máxima</span>
                     </label>
 
-                    <label id="relax">
-                        <input type="checkbox"> Relax
+                    <label id="relax" >
+                        <input type="checkbox">
+                        <span data-i18n="relax">Relax</span>
                     </label>
 
-                    <label id="amigos">
-                        <input type="checkbox"> Con amigos
+                    <label id="amigos" >
+                        <input type="checkbox">
+                        <span data-i18n="amigos">Con amigos</span>
                     </label>
 
                     <label id="individual">
-                        <input type="checkbox"> Individual
+                        <input type="checkbox">
+                        <span data-i18n="individual">Individual</span>
                     </label>
 
                     <div id="busqueda">
                         <input type="text" id="buscar_experiencia"
-                               placeholder="Introduce tu búsqueda">
+                               placeholder="Introduce tu búsqueda"
+                               data-i18n-placeholder="buscar_experiencia">
 
-                        <a href="*" class="boton">
+                        <a href="ParteB.html" class="boton">
                             <img src="images/lupa.png" alt="Icono lupa"
                                  id="lupa">
                         </a>
 
-
                     </div>
                 </form>
-            </section>
-
-            <section id="tips_usuarios">
-                <h3>Últimos tips de otros usuarios</h3>
-                <ul>
-                    <li><a href="*">Cómo ganar dinero bailando
-                        sevillanas</a></li>
-                    <li><a href="*">Mis mejores remedios para las
-                        ampollas</a></li>
-                    <li><a href="*">Presentamos la app definitiva para
-                        viajeros</a></li>
-                </ul>
-                <form id="form_tips">
-                    <h3 id="titulo_tip">¿Tienes algún tip?</h3>
-                    <input type="text" id="nombre_tip"
-                           placeholder="Título del tip">
-                    <input type="text" id="texto_tip"
-                           placeholder="Escribe aquí tu tip">
-                    <a href="*" class="boton" id="enviar_tip">Enviar</a>
-                </form>
-            </section>
+            </div>
 
             <div id="calendario">
                 <img src="images/calendario.png" alt="Calendario"
-                          id="foto_calendario">
+                     id="foto_calendario">
             </div>
         </aside>
+
+
     </div>
 </main>
 
@@ -275,12 +283,15 @@
             <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="*"> Sobre nosotros. </a>
-            <a href="*"> Politica de privacidad. </a>
-            <a href="*"> Ayuda. </a>
+            <a href="ParteB.html" data-i18n="link_nosotros"> Sobre nosotros </a>
+            <a href="ParteB.html" data-i18n="link_politica"> Politica de privacidad
+            </a>
+            <a href="ParteB.html" data-i18n="link_ayuda"> Ayuda </a>
             <form>
                 <label for="fname"> Newsletter:</label>
-                <input type="text" id="fname" placeholder="Correo electrónico">
+                <input type="email" id="fname"
+                       placeholder="Correo electrónico"
+                       data-i18n-placeholder="correo">
             </form>
         </div>
         <div class="tipo3">
