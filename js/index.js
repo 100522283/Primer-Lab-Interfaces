@@ -69,4 +69,24 @@ window.onload = function() {
             cambiar_idioma(event.target.value);
         });
     }
+
+    // Modo daltónico
+    const selectDaltónico = document.getElementById('daltónico-select');
+    if (selectDaltónico) {
+        selectDaltónico.addEventListener('change', function() {
+            const modo = event.target.value;
+            // Remover clases anteriores
+            document.body.classList.remove('daltónico', 'protanopia', 'deuteranopia', 'tritanopia', 'acromatopsia');
+            if (modo !== 'normal') {
+                document.body.classList.add(modo);
+            }
+            localStorage.setItem('modo_daltónico', modo);
+        });
+        // Cargar estado guardado
+        const daltónicoGuardado = localStorage.getItem('modo_daltónico') || 'normal';
+        selectDaltónico.value = daltónicoGuardado;
+        if (daltónicoGuardado !== 'normal') {
+            document.body.classList.add(daltónicoGuardado);
+        }
+    }
 }

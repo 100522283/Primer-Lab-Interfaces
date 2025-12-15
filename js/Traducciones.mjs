@@ -718,6 +718,24 @@ export function cambiar_idioma(idioma) {
     }
 }
 
+traducciones.ES.modo_daltónico = "Modo Daltónico";
+traducciones.EN.modo_daltónico = "Colorblind Mode";
+
+traducciones.ES.normal = "Normal";
+traducciones.EN.normal = "Normal";
+
+traducciones.ES.protanopia = "Protanopia";
+traducciones.EN.protanopia = "Protanopia";
+
+traducciones.ES.deuteranopia = "Deuteranopia";
+traducciones.EN.deuteranopia = "Deuteranopia";
+
+traducciones.ES.tritanopia = "Tritanopia";
+traducciones.EN.tritanopia = "Tritanopia";
+
+traducciones.ES.acromatopsia = "Acromatopsia";
+traducciones.EN.acromatopsia = "Achromatopsia";
+
 export function inicializar_pagina() {
 
     const idiomaGuardado = localStorage.getItem('idioma_seleccionado') || 'ES';

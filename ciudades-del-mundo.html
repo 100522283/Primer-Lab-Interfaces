@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title> Mochileros Sin Fronteras</title>
@@ -12,38 +11,46 @@
     <script src="js/index.js" type="module"></script>
 </head>
 <body>
-    <header class="titulo">
-        <div class="contenedor-flex">
-            <div class="tipo3">
-                <img src="images/mochila.png" alt="Mochila">
-            </div>
-            <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
-            <div class="tipo2">
-                <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
-                <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
-                <a href="foro.html" data-i18n="header_foro"> Foro </a>
-                <a href="info.html" data-i18n="header_contacto"> Contacto</a>
-                <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
-            </div>
-            <div class="tipo3">
-                <form>
-                    <select name="idioma" id="idioma">
-                        <option value="ES">🇪🇸</option>
-                        <option value="EN">🇬🇧</option>
-                    </select>
-                    <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
-                    <select name="tamano" id="tamano">
-                        <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
-                        <option value="20px" selected data-i18n="tamano_normal">Normal</option>
-                        <option value="26px" data-i18n="tamano_grande">Grande</option>
-                    </select>
-                </form>
-
-            </div>
+<header class="titulo">
+    <div class="contenedor-flex">
+        <div class="tipo3">
+            <img src="images/mochila.png" alt="Mochila">
+        </div>
+        <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
+        <div class="tipo2">
+            <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
+            <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+            <a href="foro.html" data-i18n="header_foro"> Foro </a>
+            <a href="info.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
+        </div>
+        <div class="tipo3">
+            <form>
+                <select name="idioma" id="idioma">
+                    <option value="ES">🇪🇸</option>
+                    <option value="EN">🇬🇧</option>
+                </select>
+                <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
+                <select name="tamano" id="tamano">
+                    <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
+                    <option value="20px" selected data-i18n="tamano_normal">Normal</option>
+                    <option value="26px" data-i18n="tamano_grande">Grande</option>
+                </select>
+            </form>
+            <label for="daltónico-select" data-i18n="modo_daltónico">Modo Daltónico</label>
+            <select id="daltónico-select">
+                <option value="normal" data-i18n="normal">Normal</option>
+                <option value="protanopia" data-i18n="protanopia">Protanopia</option>
+                <option value="deuteranopia" data-i18n="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia" data-i18n="tritanopia">Tritanopia</option>
+                <option value="acromatopsia" data-i18n="acromatopsia">Acromatopsia</option>
+            </select>
 
         </div>
 
-    </header>
+    </div>
+
+</header>
     <main>
         <h1 data-i18n="ciudades_del_mundo_title">Ciudades del Mundo</h1>
 

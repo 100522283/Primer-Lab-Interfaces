@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: var(--bg-color);
     align-content: center;
     font-family: "Montserrat", sans-serif;
     font-size: var(--font-size, 16px);
@@ -7,6 +7,69 @@ body {
 
 :root {
     --font-size: 16px;
+    --bg-color: white;
+    --text-color: black;
+    --accent-bg: lightblue;
+    --border-color: black;
+    --secondary-bg: beige;
+    --muted-text: #757575;
+    --dark-text: #333;
+    --link-color: #004d40;
+}
+
+.daltónico {
+    --bg-color: #f0f0f0;
+    --text-color: #000000;
+    --accent-bg: #ffff00; /* amarillo para resaltar */
+    --border-color: #000000;
+    --secondary-bg: #e0e0e0;
+    --muted-text: #555555;
+    --dark-text: #000000;
+    --link-color: #0000ff; /* azul */
+}
+
+.protanopia {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-bg: #00ff00; /* verde para resaltar */
+    --border-color: #000000;
+    --secondary-bg: #ffff00; /* amarillo */
+    --muted-text: #555555;
+    --dark-text: #000000;
+    --link-color: #0000ff; /* azul */
+}
+
+.deuteranopia {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-bg: #ff0000; /* rojo para resaltar */
+    --border-color: #000000;
+    --secondary-bg: #00ffff; /* cian */
+    --muted-text: #555555;
+    --dark-text: #000000;
+    --link-color: #800080; /* magenta */
+}
+
+.tritanopia {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-bg: #ff0000; /* rojo */
+    --border-color: #000000;
+    --secondary-bg: #00ff00; /* verde */
+    --muted-text: #555555;
+    --dark-text: #000000;
+    --link-color: #ffff00; /* amarillo */
+}
+
+.acromatopsia {
+    --bg-color: #808080;
+    --text-color: #000000;
+    --accent-bg: #c0c0c0;
+    --border-color: #000000;
+    --secondary-bg: #a0a0a0;
+    --muted-text: #404040;
+    --dark-text: #000000;
+    --link-color: #ffffff;
 }
 
 h2{
@@ -50,7 +113,7 @@ h3{
 .titulo{
     outline-style: solid;
     outline-width: thin;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     border-radius: 10px;
 }
 .contenedor-flex > .tipo1{
@@ -364,7 +427,7 @@ footer{
 
 
 .TextoFondoBlanco{
-    background-color: white;
+    background-color: var(--bg-color);
     outline-style: solid;
     outline-width: thin;
     opacity: 0.7;
@@ -372,10 +435,10 @@ footer{
 
 
 .boton{
-    background-color: lightblue;
+    background-color: var(--accent-bg);
     border-style: solid;
     border-width: thin;
-    border-color: black;
+    border-color: var(--border-color);
     border-radius: 7px;
     padding: 3px;
     width: fit-content;
@@ -385,7 +448,7 @@ footer{
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     padding: 2px;
 }
 
@@ -491,11 +554,11 @@ a{
 }
 
 #texto_banner{
-    color: black;
+    color: var(--text-color);
     width: fit-content;
     height: fit-content;
     padding: 10px;
-    background-color: beige;
+    background-color: var(--secondary-bg);
     align-self: center;
     border-radius: 10px;
 }
@@ -843,14 +906,14 @@ a{
 
 .resena-meta {
     font-size: 0.85em;
-    color: #757575;
+    color: var(--muted-text);
     margin-bottom: 10px;
 }
 
 .resena-texto {
     font-size: 1em;
     line-height: 1.5;
-    color: #333;
+    color: var(--dark-text);
 }
 
 
@@ -910,12 +973,12 @@ a{
 }
 
 .ciudad-tarjeta h3 {
-    color: #004d40;
+    color: var(--link-color);
     font-size: 1.2em;
 }
 
 .ciudad-tarjeta h4 {
-    color: #757575;
+    color: var(--muted-text);
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 10px;
