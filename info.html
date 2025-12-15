@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> Mochileros Sin Fronteras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/ParteC.js" type="module" defer> </script>
+
+</head>
+<body>
+<header class="titulo">
+    <div class="contenedor-flex">
+        <div class="tipo3">
+            <img src="images/mochila.png" alt="Mochila">
+        </div>
+        <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
+        <div class="tipo2">
+            <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
+            <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+            <a href="foro.html" data-i18n="header_foro"> Foro </a>
+            <a href="info.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
+        </div>
+        <div class="tipo3">
+            <form>
+                <select name="idioma" id="idioma">
+                    <option value="ES">🇪🇸</option>
+                    <option value="EN">🇬🇧</option>
+                </select>
+                <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
+                <select name="tamano" id="tamano">
+                    <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
+                    <option value="20px" selected data-i18n="tamano_normal">Normal</option>
+                    <option value="26px" data-i18n="tamano_grande">Grande</option>
+                </select>
+            </form>
+
+        </div>
+
+    </div>
+
+</header>
+<main>
+    <div class="TextoFondoBlanco">
+        <section>
+            <h2 data-i18n="sobre_nosotros_titulo">Sobre Nosotros</h2>
+            <p data-i18n="sobre_nosotros_desc">Mochileros Sin Fronteras es una agencia dedicada a ofrecer experiencias de viaje únicas y memorables. Nuestra misión es conectar a los viajeros con destinos increíbles alrededor del mundo, promoviendo el turismo sostenible y la aventura responsable. Fundada en 2025, hemos ayudado a miles de mochileros a explorar nuevos horizontes.</p>
+        </section>
+        <section>
+            <h2 data-i18n="privacidad_titulo">Política de Privacidad</h2>
+            <p data-i18n="privacidad_texto">En Mochileros Sin Fronteras, valoramos tu privacidad y nos comprometemos a proteger tu información personal. Esta política explica cómo recopilamos, usamos y protegemos tus datos. Recopilamos información cuando te registras, compras o interactúas con nuestro sitio. Usamos esta información para procesar pedidos, mejorar nuestros servicios y enviarte comunicaciones relevantes. No compartimos tu información con terceros sin tu consentimiento, salvo cuando sea necesario para cumplir con la ley. Utilizamos medidas de seguridad para proteger tus datos, pero recuerda que ninguna transmisión por internet es 100% segura. Puedes acceder, corregir o eliminar tu información contactándonos. Esta política puede actualizarse, y te notificaremos de cambios significativos.</p>
+        </section>
+        <section>
+            <h2 data-i18n="contacto_titulo">Contacto</h2>
+            <h3 data-i18n="contacto_subtitulo">Ponte en contacto con nosotros</h3>
+            <p data-i18n="contacto_info">Si tienes preguntas, sugerencias o necesitas ayuda, no dudes en contactarnos.</p>
+            <p data-i18n="contacto_email">Correo electrónico: info@mochileros.com</p>
+            <p data-i18n="contacto_telefono">Teléfono: +34 123 456 789</p>
+        </section>
+        <section>
+            <h2 data-i18n="ayuda_titulo">Ayuda</h2>
+            <h3 data-i18n="ayuda_faq_titulo">Preguntas Frecuentes</h3>
+            <div class="faq">
+                <h4 data-i18n="ayuda_q1">¿Cómo comprar un pack?</h4>
+                <p data-i18n="ayuda_a1">Selecciona el pack deseado, llena el formulario de compra y completa el pago.</p>
+                <h4 data-i18n="ayuda_q2">¿Puedo cancelar mi reserva?</h4>
+                <p data-i18n="ayuda_a2">Sí, contacta con nosotros al menos 48 horas antes para cancelar sin penalización.</p>
+                <h4 data-i18n="ayuda_q3">¿Qué incluye el pack?</h4>
+                <p data-i18n="ayuda_a3">Cada pack incluye alojamiento, transporte y actividades específicas, detalladas en la descripción.</p>
+            </div>
+            <p data-i18n="ayuda_contacto">Si no encuentras respuesta, contáctanos.</p>
+        </section>
+    </div>
+</main>
+<footer class="titulo">
+    <div class="contenedor-flex">
+        <div class="tipo5">
+            <p>© 2025 Mochileros sin fronteras.</p>
+        </div>
+        <div class="tipo2">
+            <a href="info.html" data-i18n="link_nosotros"> Sobre nosotros. </a>
+            <a href="info.html" data-i18n="link_politica"> Politica de privacidad.</a>
+            <a href="info.html" data-i18n="link_ayuda"> Ayuda. </a>
+            <form>
+                <label for="fname"> Newsletter:</label>
+                <input type="email" id="fname" placeholder="Correo electrónico" data-i18n-placeholder="correo">
+            </form>
+        </div>
+        <div class="tipo3">
+            <img src="images/twitter.jpg" alt="Logo" class="logo">
+            <img src="images/instagram.png" alt="Logo" class="logo">
+            <img src="images/tiktok.png" alt="Logo" class="logo">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
