@@ -2,6 +2,11 @@ body {
     background-color: white;
     align-content: center;
     font-family: "Montserrat", sans-serif;
+    font-size: var(--font-size, 16px);
+}
+
+:root {
+    --font-size: 16px;
 }
 
 h2{
@@ -1006,4 +1011,18 @@ a{
         grid-row-start: 12;
 
     }
+}
+
+/* Estilos específicos para el foro */
+.foro-post{ margin-bottom: 12px; padding: 12px; background-color: #ffffff; border-radius: 8px; border: 1px solid #ddd;}
+.foro-reply{ margin-left: 12px; background-color: #f8f8f8; border-left: 3px solid #eee; padding: 8px;}
+.reply-form-container textarea, #texto_comentario{ border: 1px solid #ccc; border-radius:6px; font-family: inherit;}
+.boton{ background-color: #d0eaf7; border: 1px solid #9fcbe6; cursor: pointer; }
+.boton:hover{ filter: brightness(0.98); }
+.like-count{ margin-left:6px; }
+.resena-meta{ color:#666; font-size:0.85rem; margin-left:8px; }
+
+@media only screen and (max-width:700px){
+    .contenedor-grid{ display:flex; flex-direction:column; }
+    .aside{ max-width:100%; }
 }

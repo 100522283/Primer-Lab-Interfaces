@@ -20,9 +20,10 @@
         <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
         <div class="tipo2">
             <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
-            <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+            <a href="ciudades-del-mundo.html" data-i18n="header_rincones">
+                Otros rincones </a>
             <a href="foro.html" data-i18n="header_foro"> Foro </a>
-            <a href="ParteC-noruega.html" data-i18n="header_contacto"> Contacto</a>
+            <a href="experiencia-sorpresa.html" data-i18n="header_contacto"> Contacto</a>
             <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
         </div>
         <div class="tipo3">
@@ -33,9 +34,9 @@
                 </select>
                 <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
                 <select name="tamano" id="tamano">
-                    <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
-                    <option value="20px" selected data-i18n="tamano_normal">Normal</option>
-                    <option value="26px" data-i18n="tamano_grande">Grande</option>
+                    <option value="10px" data-i18n="tamano_pequeno">Pequeño</option>
+                    <option value="16px" selected data-i18n="tamano_normal">Normal</option>
+                    <option value="22px" data-i18n="tamano_grande">Grande</option>
                 </select>
             </form>
 
@@ -46,33 +47,25 @@
 </header>
 <main>
     <div class="Contenedor_GridC">
-        <div class="Zona1Cn">
+
+        <div class="Zona1Cb">
             <div class="Contenedor_Grid1C">
                 <div class="Grid1-3L">
-                    <p class="TextoFondoBlanco"> Pack Noruega: </p>
+                    <p class="TextoFondoBlanco" data-i18n="sorpresa_titulo">Pack Misterioso:</p>
                 </div>
                 <div class="Grid4-5R">
-                    <p class="TextoFondoBlanco"> 900€</p>
+                    <p class="TextoFondoBlanco" data-i18n="sorpresa_precio">1500€</p>
                 </div>
                 <div class="Grid1-5L">
-                    <p class="TextoFondoBlanco">Escapa del calor de Madrid
-                        al mejor precio</p>
+                    <p class="TextoFondoBlanco"
+                       data-i18n="sorpresa_slogan">El enigma de los sentidos</p>
                 </div>
             </div>
         </div>
+
         <div class="Zona2C" >
-            <h4>Descripcion del pack:</h4>
-            <p>Embárcate en una experiencia única con nuestro Pack
-                Aventurero “Ice frío hielo”.
-                Diseñado para quienes buscan combinar naturaleza, cultura y diversión,
-                este paquete incluye alojamiento en hoteles seleccionados, excursiones guiadas a paisajes increíbles
-                y actividades emocionantes para todos los gustos.
-                Descubre senderos ocultos, disfruta de icebergs y cascadas y
-                degusta la gastronomía local
-                mientras nuestro equipo se encarga de cada detalle. Ideal para parejas, familias o amigos,
-                nuestro pack te garantiza momentos inolvidables y la comodidad de tener todo planificado para que
-                solo tengas que preocuparte por disfrutar.
-                ¡Prepárate para crear recuerdos que durarán toda la vida!</p>
+            <h4 data-i18n="descripcion_pack">Descripción del pack:</h4>
+            <p data-i18n="sorpresa_desc">Viaja a un lugar donde los templos antiguos custodian secretos milenarios, las playas de arena blanca se funden con aguas cristalinas, y la comida despierta sabores olvidados. Adivina el destino mientras exploras ruinas sagradas y te sumerges en una cultura rica en tradiciones. ¿Podrás descifrar el misterio antes de llegar?</p>
             <form id="form_tips">
                 <h3 data-i18n="titulo_resena">Deja tu Reseña</h3>
                 <input type="text" id="nombre_resena" placeholder="Título de la reseña" data-i18n-placeholder="titulo_resena_ph">
@@ -86,99 +79,97 @@
                 </div>
             </section>
         </div>
+
         <div class="Zona3C">
             <div class="grid-container3C">
                 <div class="TituloGrid">
-                    <h2>Formulario de compra</h2>
+                    <h2 data-i18n="form_titulo">Formulario de compra</h2>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Completo" id="datosNombre">
+                        <input type="text" placeholder="Nombre Completo" id="datosNombre" data-i18n-placeholder="form_nombre">
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder=" Correro Electronico" id="datosCorreo">
+                        <input type="text" placeholder="Correo Electrónico" id="datosCorreo" data-i18n-placeholder="form_correo">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p>Tipo de Tarjeta:</p>
-                </div>
-                <div class="Grid1-5L">
-                    <select>
-                        <option>Visa</option>
-                        <option>Mastercard</option>
-                        <option>GooglePay</option>
-                    </select>
+                    <p data-i18n="form_tipo_tarjeta">Tipo de Tarjeta:</p>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="number" placeholder="Numero de tarjeta" id="datosNumeroTarjeta">
+                        <select id="tipo_tarjeta">
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
                     </form>
                 </div>
                 <div class="Grid1-5L">
                     <form>
-                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="datosNombreTitular">
+                        <input type="text" placeholder="Número de tarjeta" id="numero_tarjeta" data-i18n-placeholder="form_num_tarjeta">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p>Fecha de Caducidad:<br></p>
-                </div>
-                <div class="Grid1-3">
                     <form>
-                        <input type="date" id="datosCaducidad" name="birthdaytime">
+                        <input type="text" placeholder="Nombre Titular de Tarjeta" id="titular_tarjeta" data-i18n-placeholder="form_titular">
                     </form>
                 </div>
-                <div class="Grid3-5C">
+                <div class="Grid1-5L">
+                    <p data-i18n="form_caducidad">Fecha de Caducidad:</p>
+                </div>
+                <div class="Grid1-5L">
                     <form>
-                        <input type="number" placeholder="Codigo CVV" id="datosCVV">
+                        <input type="month" id="fecha_caducidad">
                     </form>
                 </div>
                 <div class="Grid1-5L">
-                    <label for="numPersonas" data-i18n="label_num_personas">Número de Personas:</label>
-                    <select id="numPersonas" name="numPersonas">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-
-                <div class="Grid1-5L">
-                    <label for="mascota" data-i18n="label_mascota">¿Viaja con Mascota? (Indicar tipo)</label>
-                    <input type="text" id="mascota" placeholder="Ej: Sí, perro pequeño" data-i18n-placeholder="ej_mascota_ph">
-                </div>
-
-                <div class="Grid1-5L">
-                    <label for="alergias" data-i18n="label_alergias">Alergias o Requerimientos Especiales</label>
-                    <input type="text" id="alergias" placeholder="Ej: Alergia a frutos secos" data-i18n-placeholder="ej_alergias_ph">
-                </div>
-                <div class="Grid1-3">
-                    <input type="submit" name="Completar" id="formularioEnviar">
-                </div>
-                <div class="Grid3-5C">
-                    <input type="submit" value="Borrar" id="formularioBorrar">
+                    <form>
+                        <input type="text" placeholder="Código CVV" id="cvv" data-i18n-placeholder="form_cvv">
+                    </form>
                 </div>
                 <div class="Grid1-5L">
-                    <p id="textoConfirmar"></p>
+                    <form>
+                        <input type="number" placeholder="Número de Personas" id="num_personas" data-i18n-placeholder="label_num_personas">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="text" placeholder="Ej: Sí, perro pequeño" id="mascota" data-i18n-placeholder="ej_mascota_ph">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="text" placeholder="Ej: Alergia a frutos secos" id="alergias" data-i18n-placeholder="ej_alergias_ph">
+                    </form>
+                </div>
+                <div class="Grid1-5L">
+                    <form>
+                        <input type="submit" value="Completar" id="completar_compra" data-i18n="form_boton_enviar">
+                        <input type="reset" value="Borrar" id="borrar_form" data-i18n="form_boton_borrar">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </main>
+</body>
 <footer class="titulo">
     <div class="contenedor-flex">
         <div class="tipo5">
             <p>© 2025 Mochileros sin fronteras.</p>
         </div>
         <div class="tipo2">
-            <a href="ParteC-noruega.html"> Sobre nosotros. </a>
-            <a href="ParteC-noruega.html"> Politica de privacidad. </a>
-            <a href="ParteC-noruega.html"> Ayuda. </a>
+            <a href="ParteB.html" data-i18n="link_nosotros"> Sobre nosotros </a>
+            <a href="ParteB.html" data-i18n="link_politica"> Politica de privacidad </a>
+            <a href="ParteB.html" data-i18n="link_ayuda"> Ayuda </a>
             <form>
                 <label for="fname"> Newsletter:</label>
                 <input type="email" id="fname"
-                       placeholder="Correo electrónico">
+                       placeholder="Correo electrónico"
+                       data-i18n-placeholder="correo">
             </form>
         </div>
         <div class="tipo3">
@@ -188,7 +179,4 @@
         </div>
     </div>
 </footer>
-
-
-</body>
 </html>

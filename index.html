@@ -20,7 +20,7 @@
         <div class="tipo2">
             <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
             <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
-            <a href="*" data-i18n="header_foro"> Foro </a>
+            <a href="foro.html" data-i18n="header_foro"> Foro </a>
             <a href="ParteB.html" data-i18n="header_contacto"> Contacto</a>
             <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
         </div>
@@ -29,6 +29,12 @@
                 <select name="idioma" id="idioma">
                     <option value="ES">🇪🇸</option>
                     <option value="EN">🇬🇧</option>
+                </select>
+                <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
+                <select name="tamano" id="tamano">
+                    <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
+                    <option value="20px" selected data-i18n="tamano_normal">Normal</option>
+                    <option value="26px" data-i18n="tamano_grande">Grande</option>
                 </select>
             </form>
 
@@ -217,6 +223,39 @@
 
                 </div>
                 -->
+                <div class="tarjeta" id="tarjeta_aleatoria">
+                    <div class="titulo_tarjeta">
+                        <h4 data-i18n="titulo_experiencia_aleatoria">Experiencia Aleatoria</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/913i00gnyRL._AC_UF894,1000_QL80_ (1).jpg" alt="Experiencia Aleatoria">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="experiencia-aleatoria.html" class="boton" data-i18n="boton_vermas">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta" id="tarjeta_sorpresa">
+                    <div class="titulo_tarjeta">
+                        <h4 data-i18n="titulo_experiencia_sorpresa">Experiencia Sorpresa</h4>
+                    </div>
+                    <div class="foto_tarjeta">
+                        <img src="images/top-vie-plantas-en-cuaderno.jpg" alt="Experiencia Sorpresa">
+                    </div>
+                    <div class="like">
+                        <a href="Parte%20A.html">
+                            <img src="images/corazon.png" alt="Icono like">
+                        </a>
+                    </div>
+                    <div class="ver_mas">
+                        <a href="experiencia-sorpresa.html" class="boton" data-i18n="boton_vermas">Ver más</a>
+                    </div>
+                </div>
             </div>
 
             <aside class="aside">

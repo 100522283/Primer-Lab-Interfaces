@@ -3,6 +3,18 @@ import {cambiar_idioma, inicializar_pagina} from "./Traducciones.mjs";
 window.onload = function() {
     inicializar_pagina();
     
+    // Cargar tamaño de fuente guardado
+    const tamanoGuardado = localStorage.getItem('tamano_fuente') || '16px';
+    document.documentElement.style.setProperty('--font-size', tamanoGuardado);
+    const seleccionar_tamano = document.getElementById('tamano');
+    if (seleccionar_tamano) {
+        seleccionar_tamano.value = tamanoGuardado;
+        seleccionar_tamano.addEventListener('change', function(event) {
+            document.documentElement.style.setProperty('--font-size', event.target.value);
+            localStorage.setItem('tamano_fuente', event.target.value);
+        });
+    }
+    
     // Para el carrusel vamos ocultando todos los packs menos el que tiene
     // el indice actual. El indice cambia al pulsar las flechas o cada 2
     // segundos, lo que pase antes.

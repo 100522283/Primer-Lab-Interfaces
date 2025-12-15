@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Mochileros Sin Fronteras</title>
+
+    <link rel="stylesheet" href="style/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/index.js" type="module"></script>
+    <script src="js/foro.js" type="module"></script>
+</head>
+<body>
+    <header class="titulo">
+        <div class="contenedor-flex">
+            <div class="tipo3">
+                <img src="images/mochila.png" alt="Mochila">
+            </div>
+            <div class="tipo1"> <h1> Mochileros Sin Fronteras </h1> </div>
+            <div class="tipo2">
+                <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
+                <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
+                <a href="foro.html" data-i18n="header_foro"> Foro </a>
+                <a href="contacto.html" data-i18n="header_contacto"> Contacto</a>
+                <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
+            </div>
+            <div class="tipo3">
+                <form>
+                    <select name="idioma" id="idioma">
+                        <option value="ES">🇪🇸</option>
+                        <option value="EN">🇬🇧</option>
+                    </select>
+                    <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
+                    <select name="tamano" id="tamano">
+                        <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
+                        <option value="20px" selected data-i18n="tamano_normal">Normal</option>
+                        <option value="26px" data-i18n="tamano_grande">Grande</option>
+                    </select>
+                </form>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="contenedor-grid" style="padding:20px; gap:20px;">
+            <div class="main-superior TextoFondoBlanco" style="padding:20px;">
+                <h2 data-i18n="foro_title">Foro</h2>
+
+                <div id="escribe_comentario" class="resena-tarjeta" style="padding:12px;">
+                    <h3 data-i18n="escribe_comentario">Escribe tu comentario</h3>
+                    <p id="info_login" class="resena-meta">Inicia sesión para publicar y responder.</p>
+                    <textarea id="texto_comentario" rows="4" style="width:100%; padding:8px; margin-top:8px;" data-i18n-placeholder="foro_placeholder" placeholder="Comparte tu duda, experiencia o comentario..."></textarea>
+                    <div style="margin-top:8px; display:flex; gap:10px;">
+                        <button id="publicar_btn" class="boton" data-i18n="publicar_btn">Publicar</button>
+                        <button id="limpiar_btn" class="boton" data-i18n="limpiar_btn">Limpiar</button>
+                    </div>
+                </div>
+
+                <hr style="margin:16px 0;">
+
+                <h3 data-i18n="publicaciones_comunidad">Publicaciones de la comunidad</h3>
+                <div id="contenedor_posts"></div>
+            </div>
+
+            <aside class="aside TextoFondoBlanco" style="padding:12px; max-width:350px;">
+                <h3 data-i18n="normas_titulo">Normas y ayuda</h3>
+                <ul>
+                    <li data-i18n="norma_1">Respeta a los demás usuarios.</li>
+                    <li data-i18n="norma_2">No compartas datos personales.</li>
+                    <li data-i18n="norma_3">Describe claramente tus dudas y ubicación.</li>
+                    <li data-i18n="norma_4">Inicia sesión para publicar o responder.</li>
+                </ul>
+                <p style="font-size:0.9rem; margin-top:10px;"><span data-i18n="sin_cuenta">¿Sin cuenta?</span> <a href="Parte A.html" data-i18n="login">Regístrate / Inicia sesión</a></p>
+            </aside>
+        </section>
+    </main>
+    <footer class="titulo">
+        <div class="contenedor-flex">
+            <div class="tipo5">
+                <p>© 2025 Mochileros sin fronteras.</p>
+            </div>
+            <div class="tipo2">
+                <a href="*" data-i18n="link_nosotros"> Sobre nosotros </a>
+                <a href="*" data-i18n="link_politica"> Politica de privacidad </a>
+                <a href="*" data-i18n="link_ayuda"> Ayuda </a>
+                <form>
+                    <label for="fname"> Newsletter:</label>
+                    <input type="email" id="fname"
+                           placeholder="Correo electrónico"
+                           data-i18n-placeholder="correo">
+                </form>
+            </div>
+            <div class="tipo3">
+                <img src="images/twitter.jpg" alt="Logo" class="logo">
+                <img src="images/instagram.png" alt="Logo" class="logo">
+                <img src="images/tiktok.png" alt="Logo" class="logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

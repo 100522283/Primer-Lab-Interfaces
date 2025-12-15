@@ -21,8 +21,8 @@
             <div class="tipo2">
                 <a href="ParteB.html" data-i18n="header_inicio"> Inicio </a>
                 <a href="ciudades-del-mundo.html" data-i18n="header_rincones"> Otros rincones </a>
-                <a href="*" data-i18n="header_foro"> Foro </a>
-                <a href="*" data-i18n="header_contacto"> Contacto</a>
+                <a href="foro.html" data-i18n="header_foro"> Foro </a>
+                <a href="contacto.html" data-i18n="header_contacto"> Contacto</a>
                 <a href="Parte A.html" data-i18n="login">Iniciar sesión</a>
             </div>
             <div class="tipo3">
@@ -30,6 +30,12 @@
                     <select name="idioma" id="idioma">
                         <option value="ES">🇪🇸</option>
                         <option value="EN">🇬🇧</option>
+                    </select>
+                    <label for="tamano" data-i18n="label_tamano_texto">Tamaño del texto:</label>
+                    <select name="tamano" id="tamano">
+                        <option value="16px" data-i18n="tamano_pequeno">Pequeño</option>
+                        <option value="20px" selected data-i18n="tamano_normal">Normal</option>
+                        <option value="26px" data-i18n="tamano_grande">Grande</option>
                     </select>
                 </form>
 
@@ -39,414 +45,320 @@
 
     </header>
     <main>
-        <h1>Ciudades del Mundo</h1>
+        <h1 data-i18n="ciudades_del_mundo_title">Ciudades del Mundo</h1>
 
-        <h2>Europa</h2>
+        <h2 data-i18n="europa">Europa</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
-            <h3>Austria</h3>
-            <h4>Viena</h4>
-            <p>Ciudad imperial con museos y música clásica a cada paso. El Palacio de Schönbrunn y la Ringstrasse
-                condensan
-                el
-                barroco y el historicismo, mientras cafés como Demel mantienen la tradición pastelera. Ideal para
-                caminar
-                entre
-                parques y teatros de ópera.</p>
+            <h3 data-i18n="eu_autria_titulo">Austria</h3>
+            <h4 data-i18n="eu_viena_ciudad">Viena</h4>
+            <p data-i18n="eu_viena_desc">Ciudad imperial con museos y música clásica a cada paso. El Palacio de Schönbrunn y la Ringstrasse condensan el barroco y el historicismo, mientras cafés como Demel mantienen la tradición pastelera. Ideal para caminar entre parques y teatros de ópera.</p>
             <img src="https://images.unsplash.com/photo-1731223832507-ebe5373129e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmllbmElMkMlMjBhdXRyaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Viena">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Bélgica</h3>
-            <h4>Brujas</h4>
-            <p>Centro medieval perfectamente conservado, canales bordeados de árboles y plazas adoquinadas como el
-                Markt.
-                Campanarios, casas gremiales y chocolaterías crean un ambiente de cuento que invita a perderse sin
-                prisa.
-            </p>
+            <h3 data-i18n="eu_belgica_titulo">Bélgica</h3>
+            <h4 data-i18n="eu_brujas_ciudad">Brujas</h4>
+            <p data-i18n="eu_brujas_desc">Centro medieval perfectamente conservado, canales bordeados de árboles y plazas adoquinadas como el Markt. Campanarios, casas gremiales y chocolaterías crean un ambiente de cuento que invita a perderse sin prisa.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661963659103-9602b3811297?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
                 alt="Brujas">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Dinamarca</h3>
-            <h4>Copenhague</h4>
-            <p>Equilibrio entre diseño contemporáneo y tradición nórdica. Nyhavn, Tívoli y barrios ciclistas muestran
-                una
-                ciudad
-                humana y acogedora; gastronomía de vanguardia y respeto por el espacio público.</p>
+            <h3 data-i18n="eu_dinamarca_titulo">Dinamarca</h3>
+            <h4 data-i18n="eu_copenhague_ciudad">Copenhague</h4>
+            <p data-i18n="eu_copenhague_desc">Equilibrio entre diseño contemporáneo y tradición nórdica. Nyhavn, Tívoli y barrios ciclistas muestran una ciudad humana y acogedora; gastronomía de vanguardia y respeto por el espacio público.</p>
             <img src="https://plus.unsplash.com/premium_photo-1691414363231-836e2e1bf0ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29wZW5oYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Copenhague">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Eslovenia</h3>
-            <h4>Liubliana</h4>
-            <p>Capital pequeña y escénica, con casco peatonal, cafés junto al río y el castillo en lo alto. Base ideal
-                para
-                excursiones al lago Bled y los Alpes Julianos.</p>
+            <h3 data-i18n="eu_eslovenia_titulo">Eslovenia</h3>
+            <h4 data-i18n="eu_liubliana_ciudad">Liubliana</h4>
+            <p data-i18n="eu_liubliana_desc">Capital pequeña y escénica, con casco peatonal, cafés junto al río y el castillo en lo alto. Base ideal para excursiones al lago Bled y los Alpes Julianos.</p>
             <img src="https://images.unsplash.com/photo-1611576191056-3e6696029388?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGl1YmxpYW5hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Liubliana">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>España</h3>
-            <h4>Barcelona</h4>
-            <p>Modernismo de Gaudí, mar y montaña en un mismo plano. La Sagrada Familia, Park Güell y la vida de barrio
-                conviven
-                con mercados y museos; paseos desde Montjuïc a las playas.
-            </p>
+            <h3 data-i18n="eu_espana_titulo">España</h3>
+            <h4 data-i18n="eu_barcelona_ciudad">Barcelona</h4>
+            <p data-i18n="eu_barcelona_desc">Modernismo de Gaudí, mar y montaña en un mismo plano. La Sagrada Familia, Park Güell y la vida de barrio conviven con mercados y museos; paseos desde Montjuïc a las playas.</p>
             <img src="https://images.unsplash.com/photo-1630219694734-fe47ab76b15e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFyY2Vsb25hfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Barcelona">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Sevilla</h4>
-            <p>Casco histórico monumental, patios y azulejos. El Alcázar, la Catedral y el barrio de Santa Cruz se suman
-                a
-                una
-                potente cultura de tapas y al flamenco.</p>
+            <h4 data-i18n="eu_sevilla_ciudad">Sevilla</h4>
+            <p data-i18n="eu_sevilla_desc">Casco histórico monumental, patios y azulejos. El Alcázar, la Catedral y el barrio de Santa Cruz se suman a una potente cultura de tapas y al flamenco.</p>
             <img src="https://images.unsplash.com/photo-1559564477-6e8582270002?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2V2aWxsYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Sevilla">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Estonia</h3>
-            <h4>Tallin</h4>
-            <p>Ciudad vieja medieval amurallada, torres y tejados de colores con vistas al Báltico. Invierno frío, pero
-                fotogénico desde Toompea.</p>
+            <h3 data-i18n="eu_estonia_titulo">Estonia</h3>
+            <h4 data-i18n="eu_tallin_ciudad">Tallin</h4>
+            <p data-i18n="eu_tallin_desc">Ciudad vieja medieval amurallada, torres y tejados de colores con vistas al Báltico. Invierno frío, pero fotogénico desde Toompea.</p>
             <img src="https://images.unsplash.com/photo-1709862366377-54b16f3e51f9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFsbGlufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Tallin">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Francia</h3>
-            <h4>París</h4>
-            <p>Romance urbano: Sena, bulevares y museos icónicos. Barrios con identidad propia y cafés a pie de calle;
-                Notre
-                Dame, Sacré-Coeur y la Torre Eiffel como hitos imprescindibles.</p>
+            <h3 data-i18n="eu_francia_titulo">Francia</h3>
+            <h4 data-i18n="eu_paris_ciudad">París</h4>
+            <p data-i18n="eu_paris_desc">Romance urbano: Sena, bulevares y museos icónicos. Barrios con identidad propia y cafés a pie de calle; Notre Dame, Sacré-Coeur y la Torre Eiffel como hitos imprescindibles.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="París">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Hungría</h3>
-            <h4>Budapest</h4>
-            <p>Arquitectura Art Nouveau, baños termales y paseos nocturnos sobre el Danubio. El Parlamento brilla al
-                caer la
-                tarde desde el Puente de las Cadenas.</p>
+            <h3 data-i18n="eu_hungria_titulo">Hungría</h3>
+            <h4 data-i18n="eu_budapest_ciudad">Budapest</h4>
+            <p data-i18n="eu_budapest_desc">Arquitectura Art Nouveau, baños termales y paseos nocturnos sobre el Danubio. El Parlamento brilla al caer la tarde desde el Puente de las Cadenas.</p>
             <img src="https://images.unsplash.com/photo-1565426873118-a17ed65d74b9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnVkYXBlc3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Budapest">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Italia</h3>
-            <h4>Florencia</h4>
-            <p>Cuna del Renacimiento: Duomo, Uffizi y artesanías en el Oltrarno. Una ciudad-museo viva donde cada calle
-                guarda
-                esculturas, palacios y talleres.</p>
+            <h3 data-i18n="eu_italia_titulo">Italia</h3>
+            <h4 data-i18n="eu_florencia_ciudad">Florencia</h4>
+            <p data-i18n="eu_florencia_desc">Cuna del Renacimiento: Duomo, Uffizi y artesanías en el Oltrarno. Una ciudad-museo viva donde cada calle guarda esculturas, palacios y talleres.</p>
             <img src="https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmxvcmVuY2lhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Florencia">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Roma</h4>
-            <p>La “Ciudad Eterna” combina ruinas clásicas, plazas barrocas y vida de barrio. Del Panteón a la Fontana di
-                Trevi,
-                la historia convive con trattorias y terrazas.</p>
+            <h4 data-i18n="eu_roma_ciudad">Roma</h4>
+            <p data-i18n="eu_roma_desc">La “Ciudad Eterna” combina ruinas clásicas, plazas barrocas y vida de barrio. Del Panteón a la Fontana di Trevi, la historia convive con trattorias y terrazas.</p>
             <img src="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9tYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Roma">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Venecia</h4>
-            <p>Sin coches y con un trazado acuático único. Canales, palacios y puentes conectan islas; desde San Marcos
-                a
-                los
-                barrios más tranquilos, es pura contemplación.</p>
+            <h4 data-i18n="eu_venecia_ciudad">Venecia</h4>
+            <p data-i18n="eu_venecia_desc">Sin coches y con un trazado acuático único. Canales, palacios y puentes conectan islas; desde San Marcos a los barrios más tranquilos, es pura contemplación.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661963047742-dabc5a735357?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVuZWNpYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Venecia">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Malta</h3>
-            <h4>La Valeta</h4>
-            <p>Fortificada y barroca, con miradores al Gran Puerto. Palacios, iglesias y museos concentrados en un casco
-                compacto y caminable.</p>
+            <h3 data-i18n="eu_malta_ciudad">Malta</h3>
+            <h4 data-i18n="eu_malta_ciudad">La Valeta</h4>
+            <p data-i18n="eu_malta_desc">Fortificada y barroca, con miradores al Gran Puerto. Palacios, iglesias y museos concentrados en un casco compacto y caminable.</p>
             <img src="https://images.unsplash.com/photo-1560365337-6f42f70dd874?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGElMjB2YWxldGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="La Valeta">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Noruega</h3>
-            <h4>Bergen</h4>
-            <p>Casas de madera en Bryggen, puerto vivo y montañas que caen a fiordos. Punto de partida perfecto para
-                rutas
-                escénicas.</p>
+            <h3 data-i18n="eu_bergen_ciudad">Noruega</h3>
+            <h4 data-i18n="eu_bergen_ciudad">Bergen</h4>
+            <p data-i18n="eu_bergen_desc">Casas de madera en Bryggen, puerto vivo y montañas que caen a fiordos. Punto de partida perfecto para rutas escénicas.</p>
             <img src="https://images.unsplash.com/photo-1643193388440-50fae300e1da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmVyZ2VuJTIwbm9ydWVnYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Bergen">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Países Bajos</h3>
-            <h4>Ámsterdam</h4>
-            <p>Canales Patrimonio de la UNESCO, gables estrechos y cultura ciclista. Museos de primer nivel y barrios
-                verdes
-                conectados por puentes.</p>
+            <h3 data-i18n="eu_amsterdam_ciudad">Países Bajos</h3>
+            <h4 data-i18n="eu_amsterdam_ciudad">Ámsterdam</h4>
+            <p data-i18n="eu_amsterdam_desc">Canales Patrimonio de la UNESCO, gables estrechos y cultura ciclista. Museos de primer nivel y barrios verdes conectados por puentes.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661878122586-2d75a86f3400?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8JUMzJTgxbXN0ZXJkYW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Ámsterdam">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Portugal</h3>
-            <h4>Oporto</h4>
-            <p>Azulejos, puentes sobre el Duero y bodegas de vino de Oporto. Librería Lello y piscinas de Leça como
-                iconos
-                contemporáneos.</p>
+            <h3 data-i18n="eu_oporto_ciudad">Portugal</h3>
+            <h4 data-i18n="eu_oporto_ciudad">Oporto</h4>
+            <p data-i18n="eu_oporto_desc">Azulejos, puentes sobre el Duero y bodegas de vino de Oporto. Librería Lello y piscinas de Leça como iconos contemporáneos.</p>
             <img src="https://plus.unsplash.com/premium_photo-1677344087971-91eee10dfeb1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3BvcnRvJTIwcG9ydHVnYWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Oporto">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Reino Unido</h3>
-            <h4>Londres</h4>
-            <p>Historia y vanguardia a orillas del Támesis. Museos gratuitos, parques inmensos y una escena cultural y
-                gastronómica inagotable.</p>
+            <h3 data-i18n="eu_londres_ciudad">Reino Unido</h3>
+            <h4 data-i18n="eu_londres_ciudad">Londres</h4>
+            <p data-i18n="eu_londres_desc">Historia y vanguardia a orillas del Támesis. Museos gratuitos, parques inmensos y una escena cultural y gastronómica inagotable.</p>
             <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9uZHJlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Londres">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Edimburgo</h4>
-            <p>Royal Mile, castillo y colinas verdes. La roca volcánica de Arthur’s Seat regala una panorámica
-                excepcional
-                sobre
-                la ciudad de piedra.</p>
+            <h4 data-i18n="eu_edimburgo_ciudad">Edimburgo</h4>
+            <p data-i18n="eu_edimburgo_desc">Royal Mile, castillo y colinas verdes. La roca volcánica de Arthur’s Seat regala una panorámica excepcional sobre la ciudad de piedra.</p>
             <img src="https://images.unsplash.com/photo-1569668444050-b7bc2bfec0c7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWRpbmJ1cmdvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Edimburgo">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>República Checa</h3>
-            <h4>Praga</h4>
-            <p>Cúpulas y torres góticas sobre un casco antiguo fotogénico. Puente de Carlos al amanecer y cafés
-                históricos
-                con
-                música y literatura.</p>
+            <h3 data-i18n="eu_praga_ciudad">República Checa</h3>
+            <h4 data-i18n="eu_praga_ciudad">Praga</h4>
+            <p data-i18n="eu_praga_desc">Cúpulas y torres góticas sobre un casco antiguo fotogénico. Puente de Carlos al amanecer y cafés históricos con música y literatura.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661963067279-2f7bf970c49c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJhZ2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Praga">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Suiza</h3>
-            <h4>Lucerna</h4>
-            <p>Lago, montes cercanos y el Kapellbrücke como postal. Tejados medievales y aire alpino a pocos minutos de
-                rutas de
-                montaña.</p>
+            <h3 data-i18n="eu_lucerna_ciudad">Suiza</h3>
+            <h4 data-i18n="eu_lucerna_ciudad">Lucerna</h4>
+            <p data-i18n="eu_lucerna_desc">Lago, montes cercanos y el Kapellbrücke como postal. Tejados medievales y aire alpino a pocos minutos de rutas de montaña.</p>
             <img src="https://images.unsplash.com/photo-1635855296516-837d8b00cae7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8THVjZXJuYSUyMHN1aXphfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Lucerna">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Zúrich</h4>
-            <p>Casco antiguo elegante junto al lago, museos, galerías y vida junto al agua. Veranos vibrantes y
-                eficiencia
-                suiza
-                en cada detalle.</p>
+            <h4 data-i18n="eu_zurich_ciudad">Zúrich</h4>
+            <p data-i18n="eu_zurich_desc">Casco antiguo elegante junto al lago, museos, galerías y vida junto al agua. Veranos vibrantes y eficiencia suiza en cada detalle.</p>
             <img src="https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
                 alt="Zúrich">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Islandia</h3>
-            <h4>Reikiavik</h4>
-            <p>Arquitectura moderna como Harpa y Hallgrímskirkja entre paisajes volcánicos. Base para auroras y baños
-                termales
-                cercanos.</p>
+            <h3 data-i18n="eu_reikiavik_ciudad">Islandia</h3>
+            <h4 data-i18n="eu_reikiavik_ciudad">Reikiavik</h4>
+            <p data-i18n="eu_reikiavik_desc">Arquitectura moderna como Harpa y Hallgrímskirkja entre paisajes volcánicos. Base para auroras y baños termales cercanos.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661962984700-16b03ecda58a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UmVpa2lhdmlrfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Reikiavik">
             </div>
         </div>
         <!-- ASIA -->
-        <h2>Asia</h2>
+        <h2 data-i18n="asia">Asia</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
-            <h3>China</h3>
-            <h4>Beijing</h4>
-            <p>Capital imperial con la Ciudad Prohibida, hutongs y avenidas amplias. Puerta a tramos cercanos de la Gran
-                Muralla
-                y a una cocina regional riquísima.</p>
+            <h3 data-i18n="as_beijing_ciudad">China</h3>
+            <h4 data-i18n="as_beijing_ciudad">Beijing</h4>
+            <p data-i18n="as_beijing_desc">Capital imperial con la Ciudad Prohibida, hutongs y avenidas amplias. Puerta a tramos cercanos de la Gran Muralla y a una cocina regional riquísima.</p>
             <img src="https://plus.unsplash.com/premium_photo-1723433351351-0f6cd5d21537?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmVpamluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Beijing">
             </div>
             <div class="ciudad-tarjeta">
-            <h4>Hong Kong</h4>
-            <p>Horizonte denso en torno a un puerto lleno de ferris. Montañas, islas y reservas naturales a minutos del
-                centro
-                financiero.</p>
+            <h4 data-i18n="as_hongkong_ciudad">Hong Kong</h4>
+            <p data-i18n="as_hongkong_desc">Horizonte denso en torno a un puerto lleno de ferris. Montañas, islas y reservas naturales a minutos del centro financiero.</p>
             <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9uZyUyMGtvbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Hong Kong">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Corea del Sur</h3>
-            <h4>Seúl</h4>
-            <p>Rascacielos y palacios, mercados nocturnos y una red de metro impecable. Distritos como Bukchon y
-                Myeongdong
-                muestran tradición y moda.</p>
+            <h3 data-i18n="as_seul_ciudad">Corea del Sur</h3>
+            <h4 data-i18n="as_seul_ciudad">Seúl</h4>
+            <p data-i18n="as_seul_desc">Rascacielos y palacios, mercados nocturnos y una red de metro impecable. Distritos como Bukchon y Myeongdong muestran tradición y moda.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661936414165-3039a8d906f9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2V1bHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Seúl">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>India</h3>
-            <h4>Jaipur</h4>
-            <p>La “Ciudad Rosa”: Hawa Mahal, fuertes y bazares color salmón. Artesanías, joyería y gastronomía del
-                Rajastán
-                en
-                palacios y calles.</p>
+            <h3 data-i18n="as_jaipur_ciudad">India</h3>
+            <h4 data-i18n="as_jaipur_ciudad">Jaipur</h4>
+            <p data-i18n="as_jaipur_desc">La “Ciudad Rosa”: Hawa Mahal, fuertes y bazares color salmón. Artesanías, joyería y gastronomía del Rajastán en palacios y calles.</p>
             <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SmFpcHVyJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Jaipur">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Japón</h3>
-            <h4>Kioto</h4>
-            <p>Templos, santuarios y jardines clásicos. Hanami en primavera, rutas arboladas y posibilidad de cruzarse
-                con
-                geishas en Gion.</p>
+            <h3 data-i18n="as_kioto_ciudad">Japón</h3>
+            <h4 data-i18n="as_kioto_ciudad">Kioto</h4>
+            <p data-i18n="as_kioto_desc">Templos, santuarios y jardines clásicos. Hanami en primavera, rutas arboladas y posibilidad de cruzarse con geishas en Gion.</p>
             <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8S2lvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Kioto">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Laos</h3>
-            <h4>Luang Prabang</h4>
-            <p>Patrimonio UNESCO junto a la confluencia de ríos. Procesiones de monjes al amanecer, cascadas cercanas y
-                arquitectura colonial-budista.</p>
+            <h3 data-i18n="as_luang_ciudad">Laos</h3>
+            <h4 data-i18n="as_luang_ciudad">Luang Prabang</h4>
+            <p data-i18n="as_luang_desc">Patrimonio UNESCO junto a la confluencia de ríos. Procesiones de monjes al amanecer, cascadas cercanas y arquitectura colonial-budista.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661882477461-20d16af70819?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8THVhbmclMjBQcmFiYW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Luang Prabang">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Líbano</h3>
-            <h4>Beirut</h4>
-            <p>Playas, clubes y azoteas frente a mezquitas y zocos históricos. Gastronomía y vida nocturna con aire
-                mediterráneo
-                y levantino.</p>
+            <h3 data-i18n="as_beirut_ciudad">Líbano</h3>
+            <h4 data-i18n="as_beirut_ciudad">Beirut</h4>
+            <p data-i18n="as_beirut_desc">Playas, clubes y azoteas frente a mezquitas y zocos históricos. Gastronomía y vida nocturna con aire mediterráneo y levantino.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661963342411-11bc8489a1fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmVpcnV0JTIwbGliYW5vfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Beirut">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Omán</h3>
-            <h4>Mascate</h4>
-            <p>Bahías y montañas enmarcando mezquitas, zocos y fuertes portugueses. Paseos costeros y arquitectura
-                blanca
-                junto
-                al Golfo de Omán.</p>
+            <h3 data-i18n="as_mascate_ciudad">Omán</h3>
+            <h4 data-i18n="as_mascate_ciudad">Mascate</h4>
+            <p data-i18n="as_mascate_desc">Bahías y montañas enmarcando mezquitas, zocos y fuertes portugueses. Paseos costeros y arquitectura blanca junto al Golfo de Omán.</p>
             <img src="https://images.unsplash.com/photo-1725600462847-0317804cc466?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TWFzY2F0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Mascate">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Qatar</h3>
-            <h4>Doha</h4>
-            <p>Corniche con skyline futurista, Souq Waqif y el Museo de Arte Islámico de I. M. Pei. Mezcla de tradición
-                y
-                nuevas
-                áreas culturales.</p>
+            <h3 data-i18n="as_doha_ciudad">Qatar</h3>
+            <h4 data-i18n="as_doha_ciudad">Doha</h4>
+            <p data-i18n="as_doha_desc">Corniche con skyline futurista, Souq Waqif y el Museo de Arte Islámico de I. M. Pei. Mezcla de tradición y nuevas áreas culturales.</p>
             <img src="https://images.unsplash.com/photo-1539475314840-751cecc1dacd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RG9oYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Doha">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Tailandia</h3>
-            <h4>Chiang Mai</h4>
-            <p>Templos en la ladera, cafés y mercados creativos. Punto de partida para naturaleza del norte y
-                experiencias
-                culinarias intensas.</p>
+            <h3 data-i18n="as_chiangmai_ciudad">Tailandia</h3>
+            <h4 data-i18n="as_chiangmai_ciudad">Chiang Mai</h4>
+            <p data-i18n="as_chiangmai_desc">Templos en la ladera, cafés y mercados creativos. Punto de partida para naturaleza del norte y experiencias culinarias intensas.</p>
             <img src="https://plus.unsplash.com/premium_photo-1661929242720-140374d97c94?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2hpYW5nJTIwTWFpfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Chiang Mai">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Vietnam</h3>
-            <h4>Hanoi</h4>
-            <p>Lagos, templos y barrio francés con aire romántico. Calles angostas con cafés tradicionales y mercados
-                vibrantes.
-            </p>
+            <h3 data-i18n="as_hanoi_ciudad">Vietnam</h3>
+            <h4 data-i18n="as_hanoi_ciudad">Hanoi</h4>
+            <p data-i18n="as_hanoi_desc">Lagos, templos y barrio francés con aire romántico. Calles angostas con cafés tradicionales y mercados vibrantes.</p>
             <img src="https://plus.unsplash.com/premium_photo-1691960159290-6f4ace6e6c4c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SGFub2l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Hanoi">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Singapur</h3>
-            <h4>Singapur</h4>
-            <p>Ciudad-jardín con selva urbana, Jardín Botánico y Gardens by the Bay. Templos, casas patrimoniales y una
-                logística impecable para moverse.</p>
+            <h3 data-i18n="as_singapur_ciudad">Singapur</h3>
+            <h4 data-i18n="as_singapur_ciudad">Singapur</h4>
+            <p data-i18n="as_singapur_desc">Ciudad-jardín con selva urbana, Jardín Botánico y Gardens by the Bay. Templos, casas patrimoniales y una logística impecable para moverse.</p>
             <img src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2Fwb3JlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
                 alt="Singapur">
             </div>
         </div>
 
         <!-- ÁFRICA -->
-        <h2>África</h2>
+        <h2 data-i18n="africa">África</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
-            <h3>Marruecos</h3>
-            <h4>Chefchaouen</h4>
-            <p>Medina azul entre montañas del Rif. Callejuelas pintadas, puertas artesanales y miradores cercanos para
-                ver
-                el
-                conjunto desde arriba.</p>
+            <h3 data-i18n="af_chefchaouen_ciudad">Marruecos</h3>
+            <h4 data-i18n="af_chefchaouen_ciudad">Chefchaouen</h4>
+            <p data-i18n="af_chefchaouen_desc">Medina azul entre montañas del Rif. Callejuelas pintadas, puertas artesanales y miradores cercanos para ver el conjunto desde arriba.</p>
             <img src="https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
                 alt="Chefchaouen">
             </div>
             <div class="ciudad-tarjeta">
-            <h3>Sudáfrica</h3>
-            <h4>Ciudad del Cabo</h4>
-            <p>Table Mountain, playas con pingüinos y barrios coloridos como Bo-Kaap. Jardines, viñedos cercanos y rutas
-                panorámicas costeras.</p>
+            <h3 data-i18n="af_cabo_ciudad">Sudáfrica</h3>
+            <h4 data-i18n="af_cabo_ciudad">Ciudad del Cabo</h4>
+            <p data-i18n="af_cabo_desc">Table Mountain, playas con pingüinos y barrios coloridos como Bo-Kaap. Jardines, viñedos cercanos y rutas panorámicas costeras.</p>
             <img src="https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2l1ZGFkJTIwZGVsJTIwQ2Fib3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
                 alt="Ciudad del Cabo">
             </div>
         </div>
 
         <!-- OCEANÍA -->
-        <h2>Oceanía</h2>
+        <h2 data-i18n="oceania">Oceanía</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
-        <h3>Australia</h3>
-        <h4>Sídney</h4>
-        <p>Ópera icónica, bahía navegable y playas urbanas como Bondi. Ferris cotidianos y parques frente al agua.
-        </p>
+        <h3 data-i18n="oc_sidney_ciudad">Australia</h3>
+        <h4 data-i18n="oc_sidney_ciudad">Sídney</h4>
+        <p data-i18n="oc_sidney_desc">Ópera icónica, bahía navegable y playas urbanas como Bondi. Ferris cotidianos y parques frente al agua.</p>
         <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UyVDMyVBRGRuZXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
             alt="Sídney">
             </div>
             <div class="ciudad-tarjeta">
-        <h3>Nueva Zelanda</h3>
-        <h4>Queenstown</h4>
-        <p>Capital de la adrenalina entre lago y montañas. Miradores naturales, aventuras y paisajes
-            cinematográficos.
-        </p>
+        <h3 data-i18n="oc_queen_ciudad">Nueva Zelanda</h3>
+        <h4 data-i18n="oc_queen_ciudad">Queenstown</h4>
+        <p data-i18n="oc_queen_desc">Capital de la adrenalina entre lago y montañas. Miradores naturales, aventuras y paisajes cinematográficos.</p>
         <img src="https://images.unsplash.com/photo-1600466403153-50193d187dde?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UXVlZW5zdG93bnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
             alt="Queenstown">
             </div>
         </div>
 
         <!-- AMÉRICA DEL NORTE -->
-        <h2>América del Norte</h2>
+        <h2 data-i18n="america_norte">América del Norte</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
-        <h3>Canadá</h3>
-        <h4>Ciudad de Quebec</h4>
-        <p>Casco amurallado en altura con vistas al San Lorenzo. Ambiente europeo, tejados empinados y puestas de
-            sol
-            rosadas.</p>
+        <h3 data-i18n="na_quebec_ciudad">Canadá</h3>
+        <h4 data-i18n="na_quebec_ciudad">Ciudad de Quebec</h4>
+        <p data-i18n="na_quebec_desc">Casco amurallado en altura con vistas al San Lorenzo. Ambiente europeo, tejados empinados y puestas de sol rosadas.</p>
         <img src="https://images.unsplash.com/photo-1576771304215-6d4d30f7bb63?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fENpdWRhZCUyMGRlJTIwUXVlYmVjfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
             alt="Ciudad de Quebec">
             </div>
             <div class="ciudad-tarjeta">
-        <h3>Cuba</h3>
-        <h4>La Habana</h4>
-        <p>Arquitectura colonial de tonos pastel, música en cada esquina y paseos marítimos. La Habana Vieja y el
-            Malecón
-            marcan el ritmo.</p>
+        <h3 data-i18n="na_habana_ciudad">Cuba</h3>
+        <h4 data-i18n="na_habana_ciudad">La Habana</h4>
+        <p data-i18n="na_habana_desc">Arquitectura colonial de tonos pastel, música en cada esquina y paseos marítimos. La Habana Vieja y el Malecón marcan el ritmo.</p>
         <img src="https://images.unsplash.com/photo-1570299437488-d430e1e677c7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGElMjBIYWJhbmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500"
             alt="La Habana">
             </div>
             <div class="ciudad-tarjeta">
-        <h3>Estados Unidos</h3>
-        <h4>Nueva York</h4>
-        <p>Arquitectura icónica, parques como Central Park y una escena artística incomparable. Energía urbana que
-            no se
-            apaga.</p>
+        <h3 data-i18n="na_ny_ciudad">Estados Unidos</h3>
+        <h4 data-i18n="na_ny_ciudad">Nueva York</h4>
+        <p data-i18n="na_ny_desc">Arquitectura icónica, parques como Central Park y una escena artística incomparable. Energía urbana que no se apaga.</p>
         <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TnVldmElMjBZb3JrfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
             alt="Nueva York">
             </div>
             <div class="ciudad-tarjeta">
-        <h4>San Francisco</h4>
-        <p>Puente Golden Gate, colinas y casas victorianas. Museos de talla mundial y barrios con carácter propio.
-        </p>
+        <h4 data-i18n="na_sf_ciudad">San Francisco</h4>
+        <p data-i18n="na_sf_desc">Puente Golden Gate, colinas y casas victorianas. Museos de talla mundial y barrios con carácter propio.</p>
         <img src="https://images.unsplash.com/photo-1719858403364-83f7442a197e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2FuJTIwRnJhbmNpc2NvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
             alt="San Francisco">
             </div>
             <div class="ciudad-tarjeta">
-        <h3>México</h3>
-        <h4>San Miguel de Allende</h4>
-        <p>Centro colonial con parroquia neogótica rosada. Calles adoquinadas, patios y arte en galerías y talleres.
-        </p>
+        <h3 data-i18n="na_sma_ciudad">México</h3>
+        <h4 data-i18n="na_sma_ciudad">San Miguel de Allende</h4>
+        <p data-i18n="na_sma_desc">Centro colonial con parroquia neogótica rosada. Calles adoquinadas, patios y arte en galerías y talleres.</p>
         <img src="https://plus.unsplash.com/premium_photo-1697729800872-866107ce82c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2FuJTIwTWlndWVsJTIwZGUlMjBBbGxlbmRlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
             alt="San Miguel de Allende">
             </div>
@@ -454,7 +366,7 @@
 
 
         <!-- AMÉRICA DEL SUR -->
-        <h2>América del Sur</h2>
+        <h2 data-i18n="america_sur">América del Sur</h2>
         <div class="continente-grid">
             <div class="ciudad-tarjeta">
         <h3>Argentina</h3>
